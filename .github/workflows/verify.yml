@@ -18,6 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: pip3 install -U online-judge-verify-helper
+      
     - name: Set up Rust (1.70.0)
       run: |
         rustup set profile minimal
