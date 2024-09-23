@@ -7,8 +7,8 @@ data:
       path: Graph/UnionFind.cpp
       title: UnionFind
     - icon: ':warning:'
-      path: Graph/dijkstra.hpp
-      title: Graph/dijkstra.hpp
+      path: Graph/dijkstra.cpp
+      title: Graph/dijkstra.cpp
   verificationCategories:
   - name: .
     pages:

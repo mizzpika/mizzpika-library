@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: hpp
+  _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/dijkstra.hpp\"\n//dijkstra\n//dijkstra\nstruct dijkstra{\n\
+  bundledCode: "#line 1 \"Graph/dijkstra.cpp\"\n//dijkstra\n//dijkstra\nstruct dijkstra{\n\
     \    vector<ll> dist;\n    vector<ll> prev;\n\n    //dijkstra\u3092\u69CB\u7BC9\
     \n    dijkstra(Graph &G, ll s){\n        ll N = G.size();\n        dist.assign(N,\
     \ 1LL << 60);\n        prev.assign(N, -1);\n        priority_queue<pair<ll, ll>,\
@@ -46,15 +46,15 @@ data:
     \ != 1LL << 60;\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/dijkstra.hpp
+  path: Graph/dijkstra.cpp
   requiredBy: []
-  timestamp: '2024-09-23 11:30:41+09:00'
+  timestamp: '2024-09-23 11:45:53+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Graph/dijkstra.hpp
+documentation_of: Graph/dijkstra.cpp
 layout: document
 redirect_from:
-- /library/Graph/dijkstra.hpp
-- /library/Graph/dijkstra.hpp.html
-title: Graph/dijkstra.hpp
+- /library/Graph/dijkstra.cpp
+- /library/Graph/dijkstra.cpp.html
+title: Graph/dijkstra.cpp
 ---
