@@ -3,7 +3,14 @@ title: dijkstra
 documentation_of: ../Graph/dijkstra.hpp
 ---
 負辺なし単一始点最短経路問題を解く
-計算量:`O(|E|log|V|)`
+
+計算量:
+
+* 構築:`O(|E|log|V|)`
+
+* 最短経路:`O(N)`
+
+* その他:`O(1)`
 
 ## 概要
 
