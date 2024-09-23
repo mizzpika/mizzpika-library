@@ -1,8 +1,8 @@
 //graph_template
 struct Edge{
-    ll to;
-    ll cost;
-    Edge(ll to, ll cost) : to(to), cost(cost) {}
+    long long to;
+    long long cost;
+    Edge(long long to, long long cost) : to(to), cost(cost) {}
     bool operator>(const Edge &e) const{
         return cost > e.cost;
     }
@@ -12,10 +12,10 @@ struct Edge{
 };
 
 struct Edge2{
-    ll from;
-    ll to;
-    ll cost;
-    Edge2(ll from, ll to, ll cost) : from(from), to(to), cost(cost) {}
+    long long from;
+    long long to;
+    long long cost;
+    Edge2(long long from, long long to, long long cost) : from(from), to(to), cost(cost) {}
     bool operator>(const Edge2 &e) const{
         return cost > e.cost;
     }
@@ -25,32 +25,32 @@ struct Edge2{
 };
 
 struct Edge3 {
-    ll to;
-    Edge3(ll to) : to(to) {}
+    long long to;
+    Edge3(long long to) : to(to) {}
 };
 
 struct Graph{
     Graph() = default;
     vector<vector<Edge>> G;
 
-    Graph(ll N){
+    Graph(long long N){
         G.resize(N);
     }
 
-    ll size(){
+    long long size(){
         return G.size();
     }
 
-    void add(ll from, ll to, ll cost = 1){
+    void add(long long from, long long to, long long cost = 1){
         G[from].push_back(Edge(to, cost));
         G[to].push_back(Edge(from, cost));
     }
 
-    void add_di(ll from, ll to, ll cost = 1){
+    void add_di(long long from, long long to, long long cost = 1){
         G[from].push_back(Edge(to, cost));
     }
 
-    vector<Edge> &operator[](ll v){
+    vector<Edge> &operator[](long long v){
         return G[v];
     }
 };
