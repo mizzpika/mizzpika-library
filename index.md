@@ -6,6 +6,9 @@ data:
     - icon: ':warning:'
       path: Graph/UnionFind.cpp
       title: Graph/UnionFind.cpp
+    - icon: ':warning:'
+      path: Graph/dijkstra.hpp
+      title: Graph/dijkstra.hpp
   verificationCategories:
   - name: .
     pages:
