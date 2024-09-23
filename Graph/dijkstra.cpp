@@ -4,22 +4,22 @@
 
 //dijkstra
 struct dijkstra{
-    vector<ll> dist;
-    vector<ll> prev;
+    vector<long long> dist;
+    vector<long long> prev;
 
     //dijkstraを構築
-    dijkstra(Graph &G, ll s){
-        ll N = G.size();
+    dijkstra(Graph &G, long long s){
+        long long N = G.size();
         dist.assign(N, 1LL << 60);
         prev.assign(N, -1);
         priority_queue<pair<ll, ll>, vector<pair<ll, ll>>, greater<pair<ll, ll>>> pq;
-        dist[s] = 0;
+        dist[s] = 0LL;
         pq.emplace(dist[s], s);
         while (!pq.empty()){
             auto p = pq.top();
             pq.pop();
-            ll v = p.second;
-            if(dist[v] < p.first)continue;
+            long long v = p.second;
+            if(dist[v] < p.first) continue;
             for (auto &e : G[v]){
                 if (dist[e.to] > dist[v] + e.cost){
                     dist[e.to] = dist[v] + e.cost;
@@ -31,14 +31,14 @@ struct dijkstra{
     }
 
     //最小コストを求める
-    ll cost(ll to){
+    long long cost(ll to){
         return dist[to];
     }
 
     //最短経路を求める
-    vector<ll> path(ll to){
+    vector<long long> path(long long to){
         vector<ll> get_path;
-        for (ll i = to; i != -1; i = prev[i]){
+        for (long long i = to; i != -1; i = prev[i]){
             get_path.push_back(i);
         }
         reverse(get_path.begin(), get_path.end());
