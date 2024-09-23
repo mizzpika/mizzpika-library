@@ -1,4 +1,7 @@
-//dijkstra
+#pragma once
+
+#include "../Graph-template.cpp"
+
 //dijkstra
 struct dijkstra{
     vector<ll> dist;
