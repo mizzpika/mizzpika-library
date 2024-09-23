@@ -45,7 +45,7 @@ data:
   isVerificationFile: false
   path: Graph/graph-template.hpp
   requiredBy: []
-  timestamp: '2024-09-23 15:38:48+09:00'
+  timestamp: '2024-09-23 23:51:58+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp
