@@ -4,6 +4,9 @@ data:
   - name: Graph
     pages:
     - icon: ':warning:'
+      path: Graph/bellman-ford.hpp
+      title: Graph/bellman-ford.hpp
+    - icon: ':warning:'
       path: Graph/dijkstra.hpp
       title: dijkstra
     - icon: ':warning:'

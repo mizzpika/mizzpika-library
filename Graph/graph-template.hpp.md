@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Graph/bellman-ford.hpp
+    title: Graph/bellman-ford.hpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -44,8 +47,9 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Graph/graph-template.hpp
-  requiredBy: []
-  timestamp: '2024-09-24 07:31:34+09:00'
+  requiredBy:
+  - Graph/bellman-ford.hpp
+  timestamp: '2024-09-24 08:10:02+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp
