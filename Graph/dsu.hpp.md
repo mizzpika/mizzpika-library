@@ -39,13 +39,23 @@ data:
   isVerificationFile: false
   path: Graph/dsu.hpp
   requiredBy: []
-  timestamp: '2024-09-23 14:18:28+09:00'
+  timestamp: '2024-09-23 14:20:56+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/dsu.hpp
 layout: document
-redirect_from:
-- /library/Graph/dsu.hpp
-- /library/Graph/dsu.hpp.html
-title: Graph/dsu.hpp
+title: dsu
 ---
+ノードの連結を管理します
+
+## 概要
+
+* `dsu uf(n)`で頂点数`n`のdsuを初期化します
+
+* `uf.merge(long long from, long long to)`で`from`と`to`を連結します。また、既に連結していれば`false`、初めて連結すれば`true`を返します
+
+* `uf.same(long long from, long long to)`で`from`と`to`が同一集合にいるかを返します
+
+* `uf.leader(long long u)`で`u`が属している集合の親（`u`∈`s`かつ`v`∈`s`ならば`leader(u)`=`leader(v)`）を返します
+
+* `uf.size(long long u)`で`u`が属している集合の要素数を返します
