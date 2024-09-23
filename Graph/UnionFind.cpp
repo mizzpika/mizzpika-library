@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Graph-template.hpp"
+#include "../Graph-template.cpp"
 
 //UnionFind
 struct UnionFind{
