@@ -18,9 +18,9 @@ data:
     \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ../graph-template.cpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Graph/graph-template.cpp:\
     \ line -1: no such header\n"
-  code: "#pragma once\n\n#include \"../graph-template.cpp\"\n\n//dijkstra\nstruct\
+  code: "#pragma once\n\n#include \"Graph/graph-template.cpp\"\n\n//dijkstra\nstruct\
     \ dijkstra{\n    vector<long long> dist;\n    vector<long long> prev;\n\n    //dijkstra\u3092\
     \u69CB\u7BC9\n    dijkstra(Graph &G, long long s){\n        long long N = G.size();\n\
     \        dist.assign(N, 1LL << 60);\n        prev.assign(N, -1);\n        priority_queue<pair<ll,\
