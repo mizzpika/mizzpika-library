@@ -42,7 +42,7 @@ data:
   isVerificationFile: false
   path: Graph/graph-template.cpp
   requiredBy: []
-  timestamp: '2024-09-23 12:51:08+09:00'
+  timestamp: '2024-09-23 12:51:44+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.cpp
