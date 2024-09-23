@@ -1,7 +1,3 @@
-#pragma once
-
-#include "../Graph-template.cpp"
-
 //dsu
 struct dsu{
     vector<ll>par, rank, siz;
