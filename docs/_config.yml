@@ -7,4 +7,3 @@ plugins:
     - jekyll-redirect-from
 
 theme: jekyll-theme-midnight
-source: docs
