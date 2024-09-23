@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"C++/Graph/UnionFind.cpp\"\n//UnionFind\nstruct UnionFind{\n\
+  bundledCode: "#line 1 \"Graph/UnionFind.cpp\"\n//UnionFind\nstruct UnionFind{\n\
     \    vector<ll>par, rank, siz;\n    UnionFind(ll n):par(n, -1), rank(n, 0), siz(n,\
     \ 1){}\n\n    //\u6839\u3092\u6C42\u3081\u308B\n    ll leader(ll x){\n       \
     \ if(par[x] == -1){\n            return x;\n        }else{\n            return\
@@ -35,15 +35,15 @@ data:
     \u308B\n    ll size(ll x){\n        return siz[leader(x)];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: C++/Graph/UnionFind.cpp
+  path: Graph/UnionFind.cpp
   requiredBy: []
-  timestamp: '2024-09-23 09:54:57+09:00'
+  timestamp: '2024-09-23 10:35:21+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: C++/Graph/UnionFind.cpp
+documentation_of: Graph/UnionFind.cpp
 layout: document
 redirect_from:
-- /library/C++/Graph/UnionFind.cpp
-- /library/C++/Graph/UnionFind.cpp.html
-title: C++/Graph/UnionFind.cpp
+- /library/Graph/UnionFind.cpp
+- /library/Graph/UnionFind.cpp.html
+title: Graph/UnionFind.cpp
 ---

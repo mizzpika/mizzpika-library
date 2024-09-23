@@ -1,11 +1,11 @@
 ---
 data:
   libraryCategories:
-  - name: C++/Graph
+  - name: Graph
     pages:
     - icon: ':warning:'
-      path: C++/Graph/UnionFind.cpp
-      title: C++/Graph/UnionFind.cpp
+      path: Graph/UnionFind.cpp
+      title: Graph/UnionFind.cpp
   verificationCategories:
   - name: .
     pages:
