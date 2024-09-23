@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Graph-template.cpp"
+#include "../graph-template.cpp"
 
 //dijkstra
 struct dijkstra{
