@@ -45,14 +45,14 @@ data:
   isVerificationFile: false
   path: Graph/graph-template.hpp
   requiredBy: []
-  timestamp: '2024-09-23 14:20:56+09:00'
+  timestamp: '2024-09-23 14:27:02+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp
 layout: document
 title: graph-template
 ---
-グラフライブラリを使う際のテンプレートです
+`Graph`ライブラリを使う際のテンプレート
 
 ## 概要（ここではGraphについて）
 
