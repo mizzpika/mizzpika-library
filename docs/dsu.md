@@ -1,6 +1,6 @@
 ---
 title: dsu
-documentation_of: ../Graph/dsu.cpp
+documentation_of: ../Graph/dsu.hpp
 ---
 ノードの連結を管理します
 
