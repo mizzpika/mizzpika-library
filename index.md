@@ -11,7 +11,7 @@ data:
       title: Graph/dsu.hpp
     - icon: ':warning:'
       path: Graph/graph-template.hpp
-      title: Graph/graph-template.hpp
+      title: graph-template
   verificationCategories:
   - name: .
     pages:

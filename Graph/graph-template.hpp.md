@@ -45,13 +45,23 @@ data:
   isVerificationFile: false
   path: Graph/graph-template.hpp
   requiredBy: []
-  timestamp: '2024-09-23 14:09:42+09:00'
+  timestamp: '2024-09-23 14:18:28+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp
 layout: document
-redirect_from:
-- /library/Graph/graph-template.hpp
-- /library/Graph/graph-template.hpp.html
-title: Graph/graph-template.hpp
+title: graph-template
 ---
+グラフライブラリを使う際のテンプレートです
+
+## 概要（ここではGraphについて）
+
+* `Graph g(n)`で頂点数`n`のグラフを初期化する
+
+* `void add(long long from, long long to, long long cost = 1)`で`from`と`to`に相互に重さ`cost`の辺を張る。重さを指定していない場合は`1`となる。
+
+* `void add_di(long long from, long long to, long long cost = 1)`で`from`から`to`に重さ`cost`の辺を張る。重さを指定していない場合は`1`となる。
+
+* `long long size()`で`g`の頂点数を返す
+
+* `&operator[](long long u)`で`u`から辺が張られている頂点集合`v`の情報を返す
