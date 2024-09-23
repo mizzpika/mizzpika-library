@@ -47,8 +47,6 @@ data:
   verifiedWith: []
 documentation_of: Graph/dijkstra.cpp
 layout: document
-redirect_from:
-- /library/Graph/dijkstra.cpp
-- /library/Graph/dijkstra.cpp.html
-title: Graph/dijkstra.cpp
+title: dijkstra
 ---
+負辺なし単一始点最短経路問題を解きます

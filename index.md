@@ -5,7 +5,10 @@ data:
     pages:
     - icon: ':warning:'
       path: Graph/dijkstra.cpp
-      title: Graph/dijkstra.cpp
+      title: dijkstra
+    - icon: ':warning:'
+      path: Graph/dsu.cpp
+      title: dsu
     - icon: ':warning:'
       path: Graph/graph-template.cpp
       title: Graph/graph-template.cpp
