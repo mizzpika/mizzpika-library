@@ -1,10 +1,10 @@
 //dsu
 struct dsu{
-    vector<ll>par, rank, siz;
-    UnionFind(ll n):par(n, -1), rank(n, 0), siz(n, 1){}
+    vector<long long> par, rank, siz;
+    UnionFind(long long n):par(n, -1), rank(n, 0), siz(n, 1){}
 
     //根を求める
-    ll leader(ll x){
+    long long leader(long long x){
         if(par[x] == -1){
             return x;
         }else{
@@ -13,13 +13,13 @@ struct dsu{
     }
 
     //連結判定
-    bool same(ll x, ll y){
+    bool same(long long x, long long y){
         return leader(x) == leader(y);
     }
 
     //連結
-    bool merge(ll x, ll y){
-        ll rx = leader(x), ry = leader(y);
+    bool merge(long long x, long long y){
+        long long rx = leader(x), ry = leader(y);
         if(rx == ry){
             return false;
         }
@@ -35,7 +35,7 @@ struct dsu{
     }
 
     //集合の大きさを求める
-    ll size(ll x){
+    long long size(long long x){
         return siz[leader(x)];
     }
 };
