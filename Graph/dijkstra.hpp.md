@@ -51,6 +51,7 @@ layout: document
 title: dijkstra
 ---
 負辺なし単一始点最短経路問題を解く
+計算量:`O(|E|log|V|)`
 
 ## 概要
 
