@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/dsu.cpp\"\n//dsu\nstruct dsu{\n    vector<long long>\
+  bundledCode: "#line 1 \"Graph/dsu.hpp\"\n//dsu\nstruct dsu{\n    vector<long long>\
     \ par, rank, siz;\n    UnionFind(long long n):par(n, -1), rank(n, 0), siz(n, 1){}\n\
     \n    //\u6839\u3092\u6C42\u3081\u308B\n    long long leader(long long x){\n \
     \       if(par[x] == -1){\n            return x;\n        }else{\n           \
@@ -37,25 +37,15 @@ data:
     \ long x){\n        return siz[leader(x)];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/dsu.cpp
+  path: Graph/dsu.hpp
   requiredBy: []
-  timestamp: '2024-09-23 13:59:54+09:00'
+  timestamp: '2024-09-23 14:09:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Graph/dsu.cpp
+documentation_of: Graph/dsu.hpp
 layout: document
-title: dsu
+redirect_from:
+- /library/Graph/dsu.hpp
+- /library/Graph/dsu.hpp.html
+title: Graph/dsu.hpp
 ---
-ノードの連結を管理します
-
-## 概要
-
-* `dsu uf(n)`で頂点数`n`のdsuを初期化します
-
-* `uf.merge(long long from, long long to)`で`from`と`to`を連結します。また、既に連結していれば`false`、初めて連結すれば`true`を返します
-
-* `uf.same(long long from, long long to)`で`from`と`to`が同一集合にいるかを返します
-
-* `uf.leader(long long u)`で`u`が属している集合の親（`u`∈`s`かつ`v`∈`s`ならば`leader(u)`=`leader(v)`）を返します
-
-* `uf.size(long long u)`で`u`が属している集合の要素数を返します

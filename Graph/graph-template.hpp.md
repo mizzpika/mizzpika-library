@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/graph-template.cpp\"\n//graph_template\nstruct Edge{\n\
+  bundledCode: "#line 1 \"Graph/graph-template.hpp\"\n//graph_template\nstruct Edge{\n\
     \    long long to;\n    long long cost;\n    Edge(long long to, long long cost)\
     \ : to(to), cost(cost) {}\n    bool operator>(const Edge &e) const{\n        return\
     \ cost > e.cost;\n    }\n    bool operator<(const Edge &e) const{\n        return\
@@ -43,15 +43,15 @@ data:
     \ &operator[](long long v){\n        return G[v];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/graph-template.cpp
+  path: Graph/graph-template.hpp
   requiredBy: []
-  timestamp: '2024-09-23 13:59:54+09:00'
+  timestamp: '2024-09-23 14:09:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Graph/graph-template.cpp
+documentation_of: Graph/graph-template.hpp
 layout: document
 redirect_from:
-- /library/Graph/graph-template.cpp
-- /library/Graph/graph-template.cpp.html
-title: Graph/graph-template.cpp
+- /library/Graph/graph-template.hpp
+- /library/Graph/graph-template.hpp.html
+title: Graph/graph-template.hpp
 ---

@@ -4,7 +4,7 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
@@ -41,23 +41,15 @@ data:
     \ != 1LL << 60;\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/dijkstra.cpp
+  path: Graph/dijkstra.hpp
   requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Graph/dijkstra.cpp
+documentation_of: Graph/dijkstra.hpp
 layout: document
-title: dijkstra
+redirect_from:
+- /library/Graph/dijkstra.hpp
+- /library/Graph/dijkstra.hpp.html
+title: Graph/dijkstra.hpp
 ---
-負辺なし単一始点最短経路問題を解きます
-
-## 概要
-
-* `dijkstra(Graph g, long long s)`で`g`においての`s`からの各頂点への最短経路を構築する。
-
-* `cost(long long to)`で`s`から`to`への最短距離を返す
-
-* `path(long long to)`で`s`から`to`への最短経路をで返す
-
-* `cango(long long to)`で`s`から`to`への経路が存在するかを返す

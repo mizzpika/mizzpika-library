@@ -4,14 +4,14 @@ data:
   - name: Graph
     pages:
     - icon: ':warning:'
-      path: Graph/dijkstra.cpp
-      title: dijkstra
+      path: Graph/dijkstra.hpp
+      title: Graph/dijkstra.hpp
     - icon: ':warning:'
-      path: Graph/dsu.cpp
-      title: dsu
+      path: Graph/dsu.hpp
+      title: Graph/dsu.hpp
     - icon: ':warning:'
-      path: Graph/graph-template.cpp
-      title: Graph/graph-template.cpp
+      path: Graph/graph-template.hpp
+      title: Graph/graph-template.hpp
   verificationCategories:
   - name: .
     pages:
