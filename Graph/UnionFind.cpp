@@ -1,3 +1,7 @@
+#pragma once
+
+#include "../Graph-template.hpp"
+
 //UnionFind
 struct UnionFind{
     vector<ll>par, rank, siz;
