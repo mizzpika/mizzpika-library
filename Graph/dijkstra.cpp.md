@@ -48,7 +48,7 @@ data:
   isVerificationFile: false
   path: Graph/dijkstra.cpp
   requiredBy: []
-  timestamp: '2024-09-23 11:45:53+09:00'
+  timestamp: '2024-09-23 12:26:43+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/dijkstra.cpp
