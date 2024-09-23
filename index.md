@@ -9,6 +9,9 @@ data:
     - icon: ':warning:'
       path: Graph/dijkstra.cpp
       title: Graph/dijkstra.cpp
+    - icon: ':warning:'
+      path: Graph/graph-template.cpp
+      title: Graph/graph-template.cpp
   verificationCategories:
   - name: .
     pages:

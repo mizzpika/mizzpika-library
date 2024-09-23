@@ -18,9 +18,9 @@ data:
     \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ../Graph-template.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ../Graph-template.cpp:\
     \ line -1: no such header\n"
-  code: "#pragma once\n\n#include \"../Graph-template.hpp\"\n\n//UnionFind\nstruct\
+  code: "#pragma once\n\n#include \"../Graph-template.cpp\"\n\n//UnionFind\nstruct\
     \ UnionFind{\n    vector<ll>par, rank, siz;\n    UnionFind(ll n):par(n, -1), rank(n,\
     \ 0), siz(n, 1){}\n\n    //\u6839\u3092\u6C42\u3081\u308B\n    ll leader(ll x){\n\
     \        if(par[x] == -1){\n            return x;\n        }else{\n          \
