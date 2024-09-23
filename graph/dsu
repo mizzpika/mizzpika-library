@@ -2,8 +2,8 @@
 
 #include "../Graph-template.cpp"
 
-//UnionFind
-struct UnionFind{
+//dsu
+struct dsu{
     vector<ll>par, rank, siz;
     UnionFind(ll n):par(n, -1), rank(n, 0), siz(n, 1){}
 
