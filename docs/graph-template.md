@@ -2,7 +2,7 @@
 title: graph-template
 documentation_of: ../Graph/graph-template.hpp
 ---
-グラフライブラリを使う際のテンプレートです
+`Graph`ライブラリを使う際のテンプレート
 
 ## 概要（ここではGraphについて）
 
