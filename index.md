@@ -4,9 +4,6 @@ data:
   - name: Graph
     pages:
     - icon: ':warning:'
-      path: Graph/UnionFind.cpp
-      title: UnionFind
-    - icon: ':warning:'
       path: Graph/dijkstra.cpp
       title: Graph/dijkstra.cpp
     - icon: ':warning:'
