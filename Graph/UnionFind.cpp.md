@@ -42,8 +42,6 @@ data:
   verifiedWith: []
 documentation_of: Graph/UnionFind.cpp
 layout: document
-redirect_from:
-- /library/Graph/UnionFind.cpp
-- /library/Graph/UnionFind.cpp.html
-title: Graph/UnionFind.cpp
+title: UnionFind
 ---
+ノードの連結を管理します
