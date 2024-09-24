@@ -114,7 +114,7 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-24 22:59:16+09:00'
+  timestamp: '2024-09-24 23:14:33+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/graph/shortest-path.test.cpp
