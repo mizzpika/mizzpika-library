@@ -55,7 +55,7 @@ data:
   path: Template/template.hpp
   requiredBy:
   - Template/short.hpp
-  timestamp: '2024-09-24 21:02:07+09:00'
+  timestamp: '2024-09-24 21:04:02+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Template/template.hpp

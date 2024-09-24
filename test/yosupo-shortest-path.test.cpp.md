@@ -17,16 +17,16 @@ data:
     \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: bits/stdc++.h:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Template/template.cpp:\
     \ line -1: no such header\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n#include\
-    \ \"bits/stdc++.h\"\n#include \"Graph/dijkstra.hpp\"\nusing namespace std;\nint\
-    \ main(){\n    int n, m, s, t; cin >> n >> m >> s >> t;\n    Graph g(n);\n   \
-    \ rep(i,m){\n        ll a, b, c; cin >> a >> b >> c;\n        g.add_di(a, b, c);\n\
-    \    }\n    dijkstra ds(g, s);\n    if(!ds.cango(t)){\n        cout << -1;\n \
-    \       return 0;\n    }\n    auto res = ds.path(t);\n    cout << ds.cost(t) <<\
-    \ ' ' << res.size() - 1 << endl;\n    rep(i,res.size() - 1){\n        cout <<\
-    \ res[i] << ' ' << res[i + 1] << endl;\n    }\n}\n"
+    \ \"Template/template.cpp\"\n#include \"Graph/dijkstra.hpp\"\nusing namespace\
+    \ std;\nint main(){\n    int n, m, s, t; cin >> n >> m >> s >> t;\n    Graph g(n);\n\
+    \    rep(i,m){\n        ll a, b, c; cin >> a >> b >> c;\n        g.add_di(a, b,\
+    \ c);\n    }\n    dijkstra ds(g, s);\n    if(!ds.cango(t)){\n        cout << -1;\n\
+    \        return 0;\n    }\n    auto res = ds.path(t);\n    cout << ds.cost(t)\
+    \ << ' ' << res.size() - 1 << endl;\n    rep(i,res.size() - 1){\n        cout\
+    \ << res[i] << ' ' << res[i + 1] << endl;\n    }\n}\n"
   dependsOn: []
   isVerificationFile: true
   path: test/yosupo-shortest-path.test.cpp
