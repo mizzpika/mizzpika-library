@@ -13,6 +13,9 @@ data:
       path: Graph/bellman-ford.hpp
       title: Graph/bellman-ford.hpp
     - icon: ':warning:'
+      path: Graph/bfs1.hpp
+      title: Graph/bfs1.hpp
+    - icon: ':warning:'
       path: Graph/dijkstra.hpp
       title: dijkstra
     - icon: ':warning:'
