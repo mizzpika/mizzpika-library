@@ -36,5 +36,10 @@ data:
     - icon: ':heavy_check_mark:'
       path: example.test.cpp
       title: example.test.cpp
+  - name: test
+    pages:
+    - icon: ':x:'
+      path: test/yosupo-shortest-path.test.cpp
+      title: test/yosupo-shortest-path.test.cpp
 layout: toppage
 ---
