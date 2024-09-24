@@ -5,9 +5,9 @@
 int main(){
     ll n, q; cin >> n >> q;
     DSU dsu(n);
-    rep(i,q){
+    while(q--){
         ll t, u, v; cin >> t >> u >> v;
-        if(t == 1){
+        if(t == 0){
             dsu.merge(u, v);
         }else{
             cout << (dsu.same(u, v) ? 1 : 0) << endl;
