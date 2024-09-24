@@ -8,10 +8,13 @@ data:
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
+    title: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"Graph/LCA.hpp\"\n\n#line 2 \"Graph/graph-template.hpp\"\n\
@@ -98,9 +101,10 @@ data:
   isVerificationFile: false
   path: Graph/LCA.hpp
   requiredBy: []
-  timestamp: '2024-09-24 22:45:37+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-24 22:59:16+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
 documentation_of: Graph/LCA.hpp
 layout: document
 redirect_from:

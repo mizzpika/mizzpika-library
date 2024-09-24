@@ -5,7 +5,7 @@ data:
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: Graph/LCA.hpp
     title: Graph/LCA.hpp
   - icon: ':warning:'
@@ -28,11 +28,11 @@ data:
     title: Graph/warshall_floyd.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/yosupo-shortest-path.test.cpp
-    title: test/yosupo-shortest-path.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/yosupo/graph/shortest-path.test.cpp
     title: test/yosupo/graph/shortest-path.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
+    title: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -92,11 +92,11 @@ data:
   - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 22:45:37+09:00'
+  timestamp: '2024-09-24 22:59:16+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo-shortest-path.test.cpp
   - test/yosupo/graph/shortest-path.test.cpp
+  - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
 documentation_of: Graph/graph-template.hpp
 layout: document
 title: graph-template

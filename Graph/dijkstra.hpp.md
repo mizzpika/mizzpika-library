@@ -10,9 +10,6 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: test/yosupo-shortest-path.test.cpp
-    title: test/yosupo-shortest-path.test.cpp
-  - icon: ':heavy_check_mark:'
     path: test/yosupo/graph/shortest-path.test.cpp
     title: test/yosupo/graph/shortest-path.test.cpp
   _isVerificationFailed: false
@@ -88,10 +85,9 @@ data:
   isVerificationFile: false
   path: Graph/dijkstra.hpp
   requiredBy: []
-  timestamp: '2024-09-24 22:45:37+09:00'
+  timestamp: '2024-09-24 22:59:16+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo-shortest-path.test.cpp
   - test/yosupo/graph/shortest-path.test.cpp
 documentation_of: Graph/dijkstra.hpp
 layout: document

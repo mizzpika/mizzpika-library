@@ -6,7 +6,7 @@ data:
     - icon: ':warning:'
       path: Graph/DSU.hpp
       title: DSU
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Graph/LCA.hpp
       title: Graph/LCA.hpp
     - icon: ':warning:'
@@ -51,13 +51,8 @@ data:
       title: test/yosupo/graph/shortest-path.test.cpp
   - name: test/yosupo/tree
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
       title: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
-  - name: test
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: test/yosupo-shortest-path.test.cpp
-      title: test/yosupo-shortest-path.test.cpp
 layout: toppage
 ---
