@@ -16,6 +16,9 @@ data:
       path: Graph/graph-template.hpp
       title: graph-template
     - icon: ':warning:'
+      path: Graph/kruskal.hpp
+      title: Graph/kruskal.hpp
+    - icon: ':warning:'
       path: Graph/warshall_floyd.hpp
       title: Graph/warshall_floyd.hpp
   verificationCategories:

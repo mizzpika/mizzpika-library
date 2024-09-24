@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Graph/kruskal.hpp
+    title: Graph/kruskal.hpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -38,8 +41,9 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Graph/dsu.hpp
-  requiredBy: []
-  timestamp: '2024-09-24 17:57:52+09:00'
+  requiredBy:
+  - Graph/kruskal.hpp
+  timestamp: '2024-09-24 18:22:45+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/dsu.hpp
