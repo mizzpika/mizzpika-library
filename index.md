@@ -4,14 +4,14 @@ data:
   - name: Graph
     pages:
     - icon: ':warning:'
+      path: Graph/DSU.hpp
+      title: Graph/DSU.hpp
+    - icon: ':warning:'
       path: Graph/bellman-ford.hpp
       title: Graph/bellman-ford.hpp
     - icon: ':warning:'
       path: Graph/dijkstra.hpp
       title: dijkstra
-    - icon: ':warning:'
-      path: Graph/dsu.hpp
-      title: dsu
     - icon: ':warning:'
       path: Graph/graph-template.hpp
       title: graph-template

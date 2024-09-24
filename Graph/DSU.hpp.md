@@ -1,18 +1,15 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: Graph/kruskal.hpp
-    title: Graph/kruskal.hpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Graph/dsu.hpp\"\n//dsu\nstruct dsu{\n    vector<long long>\
-    \ par, rank, siz;\n    dsu(long long n):par(n, -1), rank(n, 0), siz(n, 1){}\n\n\
+  bundledCode: "#line 1 \"Graph/DSU.hpp\"\n//DSU\nstruct DSU{\n    vector<long long>\
+    \ par, rank, siz;\n    DSU(long long n):par(n, -1), rank(n, 0), siz(n, 1){}\n\n\
     \    //\u6839\u3092\u6C42\u3081\u308B\n    long long leader(long long x){\n  \
     \      if(par[x] == -1){\n            return x;\n        }else{\n            return\
     \ par[x] = leader(par[x]);\n        }\n    }\n\n    //\u9023\u7D50\u5224\u5B9A\
@@ -25,7 +22,7 @@ data:
     \ true;\n    }\n\n    //\u96C6\u5408\u306E\u5927\u304D\u3055\u3092\u6C42\u3081\
     \u308B\n    long long size(long long x){\n        return siz[leader(x)];\n   \
     \ }\n};\n"
-  code: "//dsu\nstruct dsu{\n    vector<long long> par, rank, siz;\n    dsu(long long\
+  code: "//DSU\nstruct DSU{\n    vector<long long> par, rank, siz;\n    DSU(long long\
     \ n):par(n, -1), rank(n, 0), siz(n, 1){}\n\n    //\u6839\u3092\u6C42\u3081\u308B\
     \n    long long leader(long long x){\n        if(par[x] == -1){\n            return\
     \ x;\n        }else{\n            return par[x] = leader(par[x]);\n        }\n\
@@ -40,30 +37,15 @@ data:
     \ long x){\n        return siz[leader(x)];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Graph/dsu.hpp
-  requiredBy:
-  - Graph/kruskal.hpp
-  timestamp: '2024-09-24 18:22:45+09:00'
+  path: Graph/DSU.hpp
+  requiredBy: []
+  timestamp: '2024-09-24 18:25:56+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Graph/dsu.hpp
+documentation_of: Graph/DSU.hpp
 layout: document
-title: dsu
+redirect_from:
+- /library/Graph/DSU.hpp
+- /library/Graph/DSU.hpp.html
+title: Graph/DSU.hpp
 ---
-ノードの連結を管理する
-
-計算量:
-
-* 全て`O(1)`（連結は厳密には異なる）
-
-## 概要
-
-* `dsu uf(n)`で頂点数`n`のdsuを初期化する
-
-* `uf.merge(long long from, long long to)`で`from`と`to`を連結します。また、既に連結していれば`false`、初めて連結すれば`true`を返す
-
-* `uf.same(long long from, long long to)`で`from`と`to`が同一集合にいるかを返す
-
-* `uf.leader(long long u)`で`u`が属している集合の親（`u`∈`s`かつ`v`∈`s`ならば`leader(u)`=`leader(v)`）を返す
-
-* `uf.size(long long u)`で`u`が属している集合の要素数を返す
