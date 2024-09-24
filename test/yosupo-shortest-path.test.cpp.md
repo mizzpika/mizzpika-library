@@ -1,25 +1,29 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/dijkstra.hpp
     title: dijkstra
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/graph-template.hpp
     title: graph-template
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
-  attributes: {}
+  _verificationStatusIcon: ':heavy_check_mark:'
+  attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/shortest_path
+    links:
+    - https://judge.yosupo.jp/problem/shortest_path
   bundledCode: "#line 1 \"test/yosupo-shortest-path.test.cpp\"\n#define PROBLEM \"\
     https://judge.yosupo.jp/problem/shortest_path\"\n#line 2 \"Template/template.hpp\"\
-    \n\n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"\
-    Ofast,unroll-loops\")\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
+    \n\n#include <bits/stdc++.h>\n#pragma GCC optimize(\"Ofast,unroll-loops\")\n#pragma\
+    \ GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
     )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
     \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
     \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
@@ -83,8 +87,8 @@ data:
   isVerificationFile: true
   path: test/yosupo-shortest-path.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 22:15:26+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-09-24 22:19:08+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo-shortest-path.test.cpp
 layout: document

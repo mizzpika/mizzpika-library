@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy:
@@ -17,7 +17,7 @@ data:
   - icon: ':warning:'
     path: Graph/bfs2.hpp
     title: Graph/bfs2.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/dijkstra.hpp
     title: dijkstra
   - icon: ':warning:'
@@ -27,17 +27,17 @@ data:
     path: Graph/warshall_floyd.hpp
     title: Graph/warshall_floyd.hpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo-shortest-path.test.cpp
     title: test/yosupo-shortest-path.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"Graph/graph-template.hpp\"\n\n#line 2 \"Template/template.hpp\"\
-    \n\n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"\
-    Ofast,unroll-loops\")\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
+    \n\n#include <bits/stdc++.h>\n#pragma GCC optimize(\"Ofast,unroll-loops\")\n#pragma\
+    \ GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
     )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
     \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
     \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
@@ -89,8 +89,8 @@ data:
   - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 22:15:26+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2024-09-24 22:19:08+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo-shortest-path.test.cpp
 documentation_of: Graph/graph-template.hpp

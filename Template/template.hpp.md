@@ -14,10 +14,10 @@ data:
   - icon: ':warning:'
     path: Graph/bfs2.hpp
     title: Graph/bfs2.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/dijkstra.hpp
     title: dijkstra
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/graph-template.hpp
     title: graph-template
   - icon: ':warning:'
@@ -30,20 +30,18 @@ data:
     path: Template/short.hpp
     title: Template/short.hpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: test/yosupo-shortest-path.test.cpp
     title: test/yosupo-shortest-path.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: '#line 2 "Template/template.hpp"
 
 
     #include <bits/stdc++.h>
-
-    #include <atcoder/all>
 
     #pragma GCC optimize("Ofast,unroll-loops")
 
@@ -74,8 +72,6 @@ data:
 
 
     #include <bits/stdc++.h>
-
-    #include <atcoder/all>
 
     #pragma GCC optimize("Ofast,unroll-loops")
 
@@ -115,8 +111,8 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-24 22:15:26+09:00'
-  verificationStatus: LIBRARY_ALL_WA
+  timestamp: '2024-09-24 22:19:08+09:00'
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo-shortest-path.test.cpp
 documentation_of: Template/template.hpp

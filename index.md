@@ -18,10 +18,10 @@ data:
     - icon: ':warning:'
       path: Graph/bfs2.hpp
       title: Graph/bfs2.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/dijkstra.hpp
       title: dijkstra
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Graph/graph-template.hpp
       title: graph-template
     - icon: ':warning:'
@@ -35,7 +35,7 @@ data:
     - icon: ':warning:'
       path: Template/short.hpp
       title: Template/short.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Template/template.hpp
       title: Template/template.hpp
   verificationCategories:
@@ -46,7 +46,7 @@ data:
       title: example.test.cpp
   - name: test
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo-shortest-path.test.cpp
       title: test/yosupo-shortest-path.test.cpp
 layout: toppage
