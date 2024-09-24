@@ -1,3 +1,5 @@
+#pragma once
+
 //DSU
 struct DSU{
     vector<long long> par, rank, siz;
