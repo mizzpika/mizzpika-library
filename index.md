@@ -32,7 +32,7 @@ data:
       title: Graph/warshall_floyd.hpp
   - name: Template
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Template/short.hpp
       title: Template/short.hpp
     - icon: ':heavy_check_mark:'
@@ -46,7 +46,7 @@ data:
       title: example.test.cpp
   - name: test/yosupo/Sample
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/yosupo/Sample/A+B.test.cpp
       title: test/yosupo/Sample/A+B.test.cpp
   - name: test/yosupo/data-structure

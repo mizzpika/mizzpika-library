@@ -26,10 +26,13 @@ data:
   - icon: ':warning:'
     path: Graph/warshall_floyd.hpp
     title: Graph/warshall_floyd.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: Template/short.hpp
     title: Template/short.hpp
   _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo/Sample/A+B.test.cpp
+    title: test/yosupo/Sample/A+B.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo/data-structure/Unionfind.test.cpp
     title: test/yosupo/data-structure/Unionfind.test.cpp
@@ -117,12 +120,13 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-25 08:12:45+09:00'
+  timestamp: '2024-09-25 08:18:29+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/data-structure/Unionfind.test.cpp
   - test/yosupo/graph/shortest-path.test.cpp
   - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
+  - test/yosupo/Sample/A+B.test.cpp
 documentation_of: Template/template.hpp
 layout: document
 redirect_from:

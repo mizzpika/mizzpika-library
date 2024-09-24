@@ -5,10 +5,13 @@ data:
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: test/yosupo/Sample/A+B.test.cpp
+    title: test/yosupo/Sample/A+B.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"Template/short.hpp\"\n\n#line 2 \"Template/template.hpp\"\
@@ -109,9 +112,10 @@ data:
   isVerificationFile: false
   path: Template/short.hpp
   requiredBy: []
-  timestamp: '2024-09-25 08:12:45+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-25 08:18:29+09:00'
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - test/yosupo/Sample/A+B.test.cpp
 documentation_of: Template/short.hpp
 layout: document
 redirect_from:

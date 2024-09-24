@@ -46,7 +46,7 @@ data:
   path: Graph/DSU.hpp
   requiredBy:
   - Graph/kruskal.hpp
-  timestamp: '2024-09-25 08:12:45+09:00'
+  timestamp: '2024-09-25 08:18:29+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/data-structure/Unionfind.test.cpp
