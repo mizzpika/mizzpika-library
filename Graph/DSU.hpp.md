@@ -43,13 +43,27 @@ data:
   path: Graph/DSU.hpp
   requiredBy:
   - Graph/kruskal.hpp
-  timestamp: '2024-09-24 18:26:42+09:00'
+  timestamp: '2024-09-24 18:27:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/DSU.hpp
 layout: document
-redirect_from:
-- /library/Graph/DSU.hpp
-- /library/Graph/DSU.hpp.html
-title: Graph/DSU.hpp
+title: DSU
 ---
+ノードの連結を管理する
+
+計算量:
+
+* 全て`O(1)`（連結は厳密には異なる）
+
+## 概要
+
+* `DSU dsu(n)`で頂点数`n`のDSUを初期化する
+
+* `dsu.merge(long long from, long long to)`で`from`と`to`を連結します。また、既に連結していれば`false`、初めて連結すれば`true`を返す
+
+* `dsu.same(long long from, long long to)`で`from`と`to`が同一集合にいるかを返す
+
+* `dsu.leader(long long u)`で`u`が属している集合の親（`u`∈`s`かつ`v`∈`s`ならば`leader(u)`=`leader(v)`）を返す
+
+* `dsu.size(long long u)`で`u`が属している集合の要素数を返す

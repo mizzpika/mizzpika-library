@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: Graph/DSU.hpp
-      title: Graph/DSU.hpp
+      title: DSU
     - icon: ':warning:'
       path: Graph/bellman-ford.hpp
       title: Graph/bellman-ford.hpp

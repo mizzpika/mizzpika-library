@@ -86,7 +86,7 @@ data:
   isVerificationFile: false
   path: Graph/warshall_floyd.hpp
   requiredBy: []
-  timestamp: '2024-09-24 18:26:42+09:00'
+  timestamp: '2024-09-24 18:27:42+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/warshall_floyd.hpp
