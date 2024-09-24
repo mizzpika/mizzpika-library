@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph/graph-template.hpp
     title: graph-template
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
@@ -90,7 +90,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 23:19:11+09:00'
+  timestamp: '2024-09-24 23:25:19+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp

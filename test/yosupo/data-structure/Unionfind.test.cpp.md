@@ -1,17 +1,17 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: Graph/DSU.hpp
     title: DSU
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
@@ -40,23 +40,24 @@ data:
     \        return true;\n    }\n\n    //\u96C6\u5408\u306E\u5927\u304D\u3055\u3092\
     \u6C42\u3081\u308B\n    long long size(long long x){\n        return siz[leader(x)];\n\
     \    }\n};\n#line 4 \"test/yosupo/data-structure/Unionfind.test.cpp\"\n\nint main(){\n\
-    \    ll n, q; cin >> n >> q;\n    DSU dsu(n);\n    rep(i,q){\n        ll t, u,\
-    \ v; cin >> t >> u >> v;\n        if(t == 1){\n            dsu.merge(u, v);\n\
+    \    ll n, q; cin >> n >> q;\n    DSU dsu(n);\n    while(q--){\n        ll t,\
+    \ u, v; cin >> t >> u >> v;\n        if(t == 0){\n            dsu.merge(u, v);\n\
     \        }else{\n            cout << (dsu.same(u, v) ? 1 : 0) << endl;\n     \
     \   }\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n#include \"\
     Template/template.hpp\"\n#include \"Graph/DSU.hpp\"\n\nint main(){\n    ll n,\
-    \ q; cin >> n >> q;\n    DSU dsu(n);\n    rep(i,q){\n        ll t, u, v; cin >>\
-    \ t >> u >> v;\n        if(t == 1){\n            dsu.merge(u, v);\n        }else{\n\
-    \            cout << (dsu.same(u, v) ? 1 : 0) << endl;\n        }\n    }\n}\n"
+    \ q; cin >> n >> q;\n    DSU dsu(n);\n    while(q--){\n        ll t, u, v; cin\
+    \ >> t >> u >> v;\n        if(t == 0){\n            dsu.merge(u, v);\n       \
+    \ }else{\n            cout << (dsu.same(u, v) ? 1 : 0) << endl;\n        }\n \
+    \   }\n}\n"
   dependsOn:
   - Template/template.hpp
   - Graph/DSU.hpp
   isVerificationFile: true
   path: test/yosupo/data-structure/Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 23:19:11+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-09-24 23:25:19+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/data-structure/Unionfind.test.cpp
 layout: document
