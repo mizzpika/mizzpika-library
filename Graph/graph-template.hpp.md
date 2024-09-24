@@ -5,6 +5,9 @@ data:
   - icon: ':warning:'
     path: Graph/bellman-ford.hpp
     title: Graph/bellman-ford.hpp
+  - icon: ':warning:'
+    path: Graph/warshall_floyd.hpp
+    title: Graph/warshall_floyd.hpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -48,8 +51,9 @@ data:
   isVerificationFile: false
   path: Graph/graph-template.hpp
   requiredBy:
+  - Graph/warshall_floyd.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 10:39:00+09:00'
+  timestamp: '2024-09-24 17:57:52+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp

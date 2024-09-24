@@ -15,6 +15,9 @@ data:
     - icon: ':warning:'
       path: Graph/graph-template.hpp
       title: graph-template
+    - icon: ':warning:'
+      path: Graph/warshall_floyd.hpp
+      title: Graph/warshall_floyd.hpp
   verificationCategories:
   - name: .
     pages:

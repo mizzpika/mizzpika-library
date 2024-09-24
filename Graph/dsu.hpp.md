@@ -39,7 +39,7 @@ data:
   isVerificationFile: false
   path: Graph/dsu.hpp
   requiredBy: []
-  timestamp: '2024-09-24 10:39:00+09:00'
+  timestamp: '2024-09-24 17:57:52+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/dsu.hpp
