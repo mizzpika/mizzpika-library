@@ -86,7 +86,7 @@ data:
   isVerificationFile: false
   path: Graph/bfs1.hpp
   requiredBy: []
-  timestamp: '2024-09-24 22:04:10+09:00'
+  timestamp: '2024-09-24 22:10:57+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/bfs1.hpp

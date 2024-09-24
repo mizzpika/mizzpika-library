@@ -68,21 +68,21 @@ data:
     \        }\n        reverse(get_path.begin(), get_path.end());\n        return\
     \ get_path;\n    }\n\n    //\u5230\u9054\u53EF\u80FD\u304B\u8ABF\u3079\u308B\n\
     \    bool cango(ll to){\n        return dist[to] != 1LL << 60;\n    }\n};\n#line\
-    \ 4 \"test/yosupo-shortest-path.test.cpp\"\nusing namespace std;\nint main(){\n\
-    \    int n, m, s, t; cin >> n >> m >> s >> t;\n    Graph g(n);\n    rep(i,m){\n\
-    \        ll a, b, c; cin >> a >> b >> c;\n        g.add_di(a, b, c);\n    }\n\
-    \    dijkstra ds(g, s);\n    if(!ds.cango(t)){\n        cout << -1;\n        return\
+    \ 4 \"test/yosupo-shortest-path.test.cpp\"\nint main(){\n    ll n, m, s, t; cin\
+    \ >> n >> m >> s >> t;\n    Graph g(n);\n    rep(i,m){\n        ll a, b, c; cin\
+    \ >> a >> b >> c;\n        g.add_di(a, b, c);\n    }\n    dijkstra ds(g, s);\n\
+    \    if(!ds.cango(t)){\n        cout << -1;\n        return 0;\n    }\n    auto\
+    \ res = ds.path(t);\n    cout << ds.cost(t) << ' ' << res.size() - 1 << endl;\n\
+    \    rep(i,res.size() - 1){\n        cout << res[i] << ' ' << res[i + 1] << endl;\n\
+    \    }\n}\n"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n#include\
+    \ \"Template/template.hpp\"\n#include \"Graph/dijkstra.hpp\"\nint main(){\n  \
+    \  ll n, m, s, t; cin >> n >> m >> s >> t;\n    Graph g(n);\n    rep(i,m){\n \
+    \       ll a, b, c; cin >> a >> b >> c;\n        g.add_di(a, b, c);\n    }\n \
+    \   dijkstra ds(g, s);\n    if(!ds.cango(t)){\n        cout << -1;\n        return\
     \ 0;\n    }\n    auto res = ds.path(t);\n    cout << ds.cost(t) << ' ' << res.size()\
     \ - 1 << endl;\n    rep(i,res.size() - 1){\n        cout << res[i] << ' ' << res[i\
     \ + 1] << endl;\n    }\n}\n"
-  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/shortest_path\"\n#include\
-    \ \"Template/template.hpp\"\n#include \"Graph/dijkstra.hpp\"\nusing namespace\
-    \ std;\nint main(){\n    int n, m, s, t; cin >> n >> m >> s >> t;\n    Graph g(n);\n\
-    \    rep(i,m){\n        ll a, b, c; cin >> a >> b >> c;\n        g.add_di(a, b,\
-    \ c);\n    }\n    dijkstra ds(g, s);\n    if(!ds.cango(t)){\n        cout << -1;\n\
-    \        return 0;\n    }\n    auto res = ds.path(t);\n    cout << ds.cost(t)\
-    \ << ' ' << res.size() - 1 << endl;\n    rep(i,res.size() - 1){\n        cout\
-    \ << res[i] << ' ' << res[i + 1] << endl;\n    }\n}\n"
   dependsOn:
   - Template/template.hpp
   - Graph/dijkstra.hpp
@@ -90,7 +90,7 @@ data:
   isVerificationFile: true
   path: test/yosupo-shortest-path.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 22:04:10+09:00'
+  timestamp: '2024-09-24 22:10:57+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo-shortest-path.test.cpp
