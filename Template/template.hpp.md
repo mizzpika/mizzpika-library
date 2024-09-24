@@ -38,7 +38,8 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     links: []
-  bundledCode: '#line 1 "Template/template.hpp"
+  bundledCode: '#line 2 "Template/template.hpp"
+
 
     #include <bits/stdc++.h>
 
@@ -69,7 +70,10 @@ data:
     #define _CRT_SECURE_NO_WARNINGS
 
     '
-  code: '#include <bits/stdc++.h>
+  code: '#pragma once
+
+
+    #include <bits/stdc++.h>
 
     #include <atcoder/all>
 
@@ -111,7 +115,7 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-24 22:10:57+09:00'
+  timestamp: '2024-09-24 22:15:26+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo-shortest-path.test.cpp

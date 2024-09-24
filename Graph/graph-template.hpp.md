@@ -35,9 +35,9 @@ data:
   _verificationStatusIcon: ':x:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"Graph/graph-template.hpp\"\n\n#line 1 \"Template/template.hpp\"\
-    \n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"Ofast,unroll-loops\"\
-    )\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
+  bundledCode: "#line 2 \"Graph/graph-template.hpp\"\n\n#line 2 \"Template/template.hpp\"\
+    \n\n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"\
+    Ofast,unroll-loops\")\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
     )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
     \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
     \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
@@ -89,7 +89,7 @@ data:
   - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 22:10:57+09:00'
+  timestamp: '2024-09-24 22:15:26+09:00'
   verificationStatus: LIBRARY_ALL_WA
   verifiedWith:
   - test/yosupo-shortest-path.test.cpp

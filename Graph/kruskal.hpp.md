@@ -18,7 +18,7 @@ data:
   attributes:
     links: []
   bundledCode: "#line 2 \"Graph/kruskal.hpp\"\n\n#line 2 \"Graph/graph-template.hpp\"\
-    \n\n#line 1 \"Template/template.hpp\"\n#include <bits/stdc++.h>\n#include <atcoder/all>\n\
+    \n\n#line 2 \"Template/template.hpp\"\n\n#include <bits/stdc++.h>\n#include <atcoder/all>\n\
     #pragma GCC optimize(\"Ofast,unroll-loops\")\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
     )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
     \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
@@ -42,7 +42,7 @@ data:
     \ cost));\n    }\n\n    void add_di(long long from, long long to, long long cost\
     \ = 1){\n        G[from].push_back(Edge(to, cost));\n    }\n\n    vector<Edge>\
     \ &operator[](long long v){\n        return G[v];\n    }\n};\n#line 4 \"Graph/kruskal.hpp\"\
-    \n\n#line 1 \"Graph/DSU.hpp\"\n//DSU\nstruct DSU{\n    vector<long long> par,\
+    \n\n#line 2 \"Graph/DSU.hpp\"\n\n//DSU\nstruct DSU{\n    vector<long long> par,\
     \ rank, siz;\n    DSU(long long n):par(n, -1), rank(n, 0), siz(n, 1){}\n\n   \
     \ //\u6839\u3092\u6C42\u3081\u308B\n    long long leader(long long x){\n     \
     \   if(par[x] == -1){\n            return x;\n        }else{\n            return\
@@ -89,7 +89,7 @@ data:
   isVerificationFile: false
   path: Graph/kruskal.hpp
   requiredBy: []
-  timestamp: '2024-09-24 22:10:57+09:00'
+  timestamp: '2024-09-24 22:15:26+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/kruskal.hpp

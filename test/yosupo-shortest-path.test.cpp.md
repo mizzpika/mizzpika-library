@@ -17,23 +17,16 @@ data:
   _verificationStatusIcon: ':x:'
   attributes: {}
   bundledCode: "#line 1 \"test/yosupo-shortest-path.test.cpp\"\n#define PROBLEM \"\
-    https://judge.yosupo.jp/problem/shortest_path\"\n#line 1 \"Template/template.hpp\"\
-    \n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"Ofast,unroll-loops\"\
-    )\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
-    )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
-    \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
-    \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
-    \ (ll)n - 1; i >= 0LL; --i)\n#define rrep1(i,n) for(ll i = (ll)n; i > 0LL; --i)\n\
-    #define rrep2(i,m,n) for(ll i = (ll)m; i > (ll)n; --i)\n#define _GLIBCXX_DEBUG\n\
-    #define _CRT_SECURE_NO_WARNINGS\n#line 2 \"Graph/dijkstra.hpp\"\n\n#line 2 \"\
-    Graph/graph-template.hpp\"\n\n#line 3 \"Template/template.hpp\"\n#pragma GCC optimize(\"\
+    https://judge.yosupo.jp/problem/shortest_path\"\n#line 2 \"Template/template.hpp\"\
+    \n\n#include <bits/stdc++.h>\n#include <atcoder/all>\n#pragma GCC optimize(\"\
     Ofast,unroll-loops\")\n#pragma GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
     )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
     \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
     \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
     \ (ll)n - 1; i >= 0LL; --i)\n#define rrep1(i,n) for(ll i = (ll)n; i > 0LL; --i)\n\
     #define rrep2(i,m,n) for(ll i = (ll)m; i > (ll)n; --i)\n#define _GLIBCXX_DEBUG\n\
-    #define _CRT_SECURE_NO_WARNINGS\n#line 4 \"Graph/graph-template.hpp\"\n\n//graph_template\n\
+    #define _CRT_SECURE_NO_WARNINGS\n#line 2 \"Graph/dijkstra.hpp\"\n\n#line 2 \"\
+    Graph/graph-template.hpp\"\n\n#line 4 \"Graph/graph-template.hpp\"\n\n//graph_template\n\
     struct Edge{\n    long long to;\n    long long cost;\n    Edge(long long to, long\
     \ long cost) : to(to), cost(cost) {}\n    bool operator>(const Edge &e) const{\n\
     \        return cost > e.cost;\n    }\n    bool operator<(const Edge &e) const{\n\
@@ -90,7 +83,7 @@ data:
   isVerificationFile: true
   path: test/yosupo-shortest-path.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 22:10:57+09:00'
+  timestamp: '2024-09-24 22:15:26+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo-shortest-path.test.cpp
