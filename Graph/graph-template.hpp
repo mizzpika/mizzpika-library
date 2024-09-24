@@ -1,3 +1,7 @@
+#pragma once
+
+#include "Template/template.hpp"
+
 //graph_template
 struct Edge{
     long long to;
