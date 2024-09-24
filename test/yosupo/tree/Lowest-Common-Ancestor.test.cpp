@@ -1,6 +1,6 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/lca"
 #include "Template/template.hpp"
-#include "Graph/LCA"
+#include "Graph/LCA.hpp"
 
 int main(){
     ll n, q; cin >> n >> q;
