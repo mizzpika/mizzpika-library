@@ -12,6 +12,9 @@ data:
     path: Graph/bfs1.hpp
     title: Graph/bfs1.hpp
   - icon: ':warning:'
+    path: Graph/bfs2.hpp
+    title: Graph/bfs2.hpp
+  - icon: ':warning:'
     path: Graph/kruskal.hpp
     title: Graph/kruskal.hpp
   - icon: ':warning:'
@@ -63,9 +66,10 @@ data:
   - Graph/warshall_floyd.hpp
   - Graph/LCA.hpp
   - Graph/kruskal.hpp
+  - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 18:36:22+09:00'
+  timestamp: '2024-09-24 18:37:08+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp
