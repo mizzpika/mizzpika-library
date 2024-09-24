@@ -1,9 +1,8 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/shortest_path"
 #include "Template/template.hpp"
 #include "Graph/dijkstra.hpp"
-using namespace std;
 int main(){
-    int n, m, s, t; cin >> n >> m >> s >> t;
+    ll n, m, s, t; cin >> n >> m >> s >> t;
     Graph g(n);
     rep(i,m){
         ll a, b, c; cin >> a >> b >> c;
