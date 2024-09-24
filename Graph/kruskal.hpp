@@ -2,7 +2,7 @@
 
 #include "Graph/graph-template.hpp"
 
-#include "Graph/dsu.hpp"
+#include "Graph/DSU.hpp"
 
 //kruskal
 struct kruskal{
@@ -21,10 +21,10 @@ struct kruskal{
     //最小全域木のコストを求める
     long long mincost(){
         sort(edges.begin(), edges.end());
-        dsu uf(n);
+        DSU dsu(n);
         long long ret = 0;
         for(auto e : edges){
-            if(uf.merge(e.from, e.to))ret += e.cost;
+            if(dsu.merge(e.from, e.to))ret += e.cost;
         }
         return ret;
     }
@@ -32,10 +32,10 @@ struct kruskal{
     //最大全域木のコストを求める
     long long maxcost(){
         sort(edges.rbegin(), edges.rend());
-        dsu uf(n);
+        DSU dsu(n);
         long long ret = 0;
         for(auto e : edges){
-            if(uf.merge(e.from, e.to))ret += e.cost;
+            if(dsu.merge(e.from, e.to))ret += e.cost;
         }
         return ret;
     }
