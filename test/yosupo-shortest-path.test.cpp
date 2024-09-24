@@ -1,6 +1,6 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/shortest_path"
 #include "bits/stdc++.h"
-#include "Graph/dijkstra"
+#include "Graph/dijkstra.hpp"
 using namespace std;
 int main(){
     int n, m, s, t; cin >> n >> m >> s >> t;
