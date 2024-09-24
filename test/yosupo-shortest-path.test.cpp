@@ -4,10 +4,9 @@
 using namespace std;
 int main(){
     int n, m, s, t; cin >> n >> m >> s >> t;
-    s--, t--;
     Graph g(n);
     rep(i,m){
-        ll a, b, c; cin >> a >> b >> c; a--, b--;
+        ll a, b, c; cin >> a >> b >> c;
         g.add_di(a, b, c);
     }
     dijkstra ds(g, s);
@@ -16,7 +15,8 @@ int main(){
         return 0;
     }
     auto res = ds.path(t);
-    for(auto e : res){
-        cout << e << ' ';
+    cout << ds.cost(t) << ' ' << res.size() - 1 << endl;
+    rep(i,res.size() - 1){
+        cout << res[i] << ' ' << res[i + 1] << endl;
     }
 }
