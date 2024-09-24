@@ -1,26 +1,55 @@
 ---
 data:
-  _extendedDependsOn: []
+  _extendedDependsOn:
+  - icon: ':x:'
+    path: Graph/graph-template.hpp
+    title: graph-template
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo-shortest-path.test.cpp
+    title: test/yosupo-shortest-path.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
-  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
-    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
-    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
-    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
-    \  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
-    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
-    , line 401, in update\n    self.update(self._resolve(pathlib.Path(included), included_from=path))\n\
-    \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
-    \ File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
-    , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Graph/graph-template.cpp:\
-    \ line -1: no such header\n"
-  code: "#pragma once\n\n#include \"Graph/graph-template.cpp\"\n\n//dijkstra\nstruct\
+  bundledCode: "#line 2 \"Graph/dijkstra.hpp\"\n\n#line 1 \"Graph/graph-template.hpp\"\
+    \n//graph_template\nstruct Edge{\n    long long to;\n    long long cost;\n   \
+    \ Edge(long long to, long long cost) : to(to), cost(cost) {}\n    bool operator>(const\
+    \ Edge &e) const{\n        return cost > e.cost;\n    }\n    bool operator<(const\
+    \ Edge &e) const{\n        return cost < e.cost;\n    }\n};\n\nstruct Edge2{\n\
+    \    long long from;\n    long long to;\n    long long cost;\n    Edge2(long long\
+    \ from, long long to, long long cost) : from(from), to(to), cost(cost) {}\n  \
+    \  bool operator>(const Edge2 &e) const{\n        return cost > e.cost;\n    }\n\
+    \    bool operator<(const Edge2 &e) const{\n        return cost < e.cost;\n  \
+    \  }\n};\n\nstruct Edge3 {\n    long long to;\n    Edge3(long long to) : to(to)\
+    \ {}\n};\n\nstruct Graph{\n    Graph() = default;\n    vector<vector<Edge>> G;\n\
+    \n    Graph(long long N){\n        G.resize(N);\n    }\n\n    long long size(){\n\
+    \        return G.size();\n    }\n\n    void add(long long from, long long to,\
+    \ long long cost = 1){\n        G[from].push_back(Edge(to, cost));\n        G[to].push_back(Edge(from,\
+    \ cost));\n    }\n\n    void add_di(long long from, long long to, long long cost\
+    \ = 1){\n        G[from].push_back(Edge(to, cost));\n    }\n\n    vector<Edge>\
+    \ &operator[](long long v){\n        return G[v];\n    }\n};\n#line 4 \"Graph/dijkstra.hpp\"\
+    \n\n//dijkstra\nstruct dijkstra{\n    vector<long long> dist;\n    vector<long\
+    \ long> prev;\n\n    //dijkstra\u3092\u69CB\u7BC9\n    dijkstra(Graph &G, long\
+    \ long s){\n        long long N = G.size();\n        dist.assign(N, 1LL << 60);\n\
+    \        prev.assign(N, -1);\n        priority_queue<pair<ll, ll>, vector<pair<ll,\
+    \ ll>>, greater<pair<ll, ll>>> pq;\n        dist[s] = 0LL;\n        pq.emplace(dist[s],\
+    \ s);\n        while (!pq.empty()){\n            auto p = pq.top();\n        \
+    \    pq.pop();\n            long long v = p.second;\n            if(dist[v] <\
+    \ p.first) continue;\n            for (auto &e : G[v]){\n                if (dist[e.to]\
+    \ > dist[v] + e.cost){\n                    dist[e.to] = dist[v] + e.cost;\n \
+    \                   prev[e.to] = v;\n                    pq.emplace(dist[e.to],\
+    \ e.to);\n                }\n            }\n        }\n    }\n\n    //\u6700\u5C0F\
+    \u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long cost(ll to){\n     \
+    \   return dist[to];\n    }\n\n    //\u6700\u77ED\u7D4C\u8DEF\u3092\u6C42\u3081\
+    \u308B\n    vector<long long> path(long long to){\n        vector<ll> get_path;\n\
+    \        for (long long i = to; i != -1; i = prev[i]){\n            get_path.push_back(i);\n\
+    \        }\n        reverse(get_path.begin(), get_path.end());\n        return\
+    \ get_path;\n    }\n\n    //\u5230\u9054\u53EF\u80FD\u304B\u8ABF\u3079\u308B\n\
+    \    bool cango(ll to){\n        return dist[to] != 1LL << 60;\n    }\n};\n"
+  code: "#pragma once\n\n#include \"Graph/graph-template.hpp\"\n\n//dijkstra\nstruct\
     \ dijkstra{\n    vector<long long> dist;\n    vector<long long> prev;\n\n    //dijkstra\u3092\
     \u69CB\u7BC9\n    dijkstra(Graph &G, long long s){\n        long long N = G.size();\n\
     \        dist.assign(N, 1LL << 60);\n        prev.assign(N, -1);\n        priority_queue<pair<ll,\
@@ -39,13 +68,15 @@ data:
     \ get_path.end());\n        return get_path;\n    }\n\n    //\u5230\u9054\u53EF\
     \u80FD\u304B\u8ABF\u3079\u308B\n    bool cango(ll to){\n        return dist[to]\
     \ != 1LL << 60;\n    }\n};\n"
-  dependsOn: []
+  dependsOn:
+  - Graph/graph-template.hpp
   isVerificationFile: false
   path: Graph/dijkstra.hpp
   requiredBy: []
-  timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-24 22:00:09+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yosupo-shortest-path.test.cpp
 documentation_of: Graph/dijkstra.hpp
 layout: document
 title: dijkstra

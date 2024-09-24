@@ -1,7 +1,7 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':x:'
     path: Graph/graph-template.hpp
     title: graph-template
   _extendedRequiredBy: []
@@ -74,7 +74,7 @@ data:
   isVerificationFile: false
   path: Graph/bfs1.hpp
   requiredBy: []
-  timestamp: '2024-09-24 21:08:50+09:00'
+  timestamp: '2024-09-24 22:00:09+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/bfs1.hpp

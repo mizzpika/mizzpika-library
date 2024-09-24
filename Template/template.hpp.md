@@ -5,10 +5,13 @@ data:
   - icon: ':warning:'
     path: Template/short.hpp
     title: Template/short.hpp
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo-shortest-path.test.cpp
+    title: test/yosupo-shortest-path.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: '#line 1 "Template/template.hpp"
@@ -76,9 +79,10 @@ data:
   path: Template/template.hpp
   requiredBy:
   - Template/short.hpp
-  timestamp: '2024-09-24 21:08:50+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-24 22:00:09+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yosupo-shortest-path.test.cpp
 documentation_of: Template/template.hpp
 layout: document
 redirect_from:

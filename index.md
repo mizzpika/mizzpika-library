@@ -18,10 +18,10 @@ data:
     - icon: ':warning:'
       path: Graph/bfs2.hpp
       title: Graph/bfs2.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Graph/dijkstra.hpp
       title: dijkstra
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Graph/graph-template.hpp
       title: graph-template
     - icon: ':warning:'
@@ -35,7 +35,7 @@ data:
     - icon: ':warning:'
       path: Template/short.hpp
       title: Template/short.hpp
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Template/template.hpp
       title: Template/template.hpp
   verificationCategories:

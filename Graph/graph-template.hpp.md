@@ -14,16 +14,22 @@ data:
   - icon: ':warning:'
     path: Graph/bfs2.hpp
     title: Graph/bfs2.hpp
+  - icon: ':x:'
+    path: Graph/dijkstra.hpp
+    title: dijkstra
   - icon: ':warning:'
     path: Graph/kruskal.hpp
     title: Graph/kruskal.hpp
   - icon: ':warning:'
     path: Graph/warshall_floyd.hpp
     title: Graph/warshall_floyd.hpp
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo-shortest-path.test.cpp
+    title: test/yosupo-shortest-path.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Graph/graph-template.hpp\"\n//graph_template\nstruct Edge{\n\
@@ -66,12 +72,14 @@ data:
   - Graph/warshall_floyd.hpp
   - Graph/LCA.hpp
   - Graph/kruskal.hpp
+  - Graph/dijkstra.hpp
   - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 21:08:50+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-24 22:00:09+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yosupo-shortest-path.test.cpp
 documentation_of: Graph/graph-template.hpp
 layout: document
 title: graph-template
