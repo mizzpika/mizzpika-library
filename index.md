@@ -33,6 +33,9 @@ data:
   - name: Template
     pages:
     - icon: ':warning:'
+      path: Template/short.hpp
+      title: Template/short.hpp
+    - icon: ':warning:'
       path: Template/template.hpp
       title: Template/template.hpp
   verificationCategories:

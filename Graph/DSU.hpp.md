@@ -43,7 +43,7 @@ data:
   path: Graph/DSU.hpp
   requiredBy:
   - Graph/kruskal.hpp
-  timestamp: '2024-09-24 20:59:57+09:00'
+  timestamp: '2024-09-24 21:02:07+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/DSU.hpp
