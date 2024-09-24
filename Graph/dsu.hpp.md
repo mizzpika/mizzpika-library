@@ -39,7 +39,7 @@ data:
   isVerificationFile: false
   path: Graph/dsu.hpp
   requiredBy: []
-  timestamp: '2024-09-24 08:10:02+09:00'
+  timestamp: '2024-09-24 10:39:00+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/dsu.hpp
@@ -47,6 +47,10 @@ layout: document
 title: dsu
 ---
 ノードの連結を管理する
+
+計算量:
+
+* 全て`O(1)`（連結は厳密には異なる）
 
 ## 概要
 
