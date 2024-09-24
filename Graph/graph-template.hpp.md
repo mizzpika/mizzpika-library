@@ -92,7 +92,7 @@ data:
   - Graph/bfs2.hpp
   - Graph/bfs1.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 23:25:19+09:00'
+  timestamp: '2024-09-25 08:12:45+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/graph/shortest-path.test.cpp

@@ -44,6 +44,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: example.test.cpp
       title: example.test.cpp
+  - name: test/yosupo/Sample
+    pages:
+    - icon: ':x:'
+      path: test/yosupo/Sample/A+B.test.cpp
+      title: test/yosupo/Sample/A+B.test.cpp
   - name: test/yosupo/data-structure
     pages:
     - icon: ':heavy_check_mark:'

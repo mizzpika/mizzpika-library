@@ -109,7 +109,7 @@ data:
   isVerificationFile: false
   path: Template/short.hpp
   requiredBy: []
-  timestamp: '2024-09-24 23:25:19+09:00'
+  timestamp: '2024-09-25 08:12:45+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Template/short.hpp
