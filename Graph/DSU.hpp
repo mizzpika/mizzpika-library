@@ -1,7 +1,7 @@
-//dsu
-struct dsu{
+//DSU
+struct DSU{
     vector<long long> par, rank, siz;
-    dsu(long long n):par(n, -1), rank(n, 0), siz(n, 1){}
+    DSU(long long n):par(n, -1), rank(n, 0), siz(n, 1){}
 
     //根を求める
     long long leader(long long x){
