@@ -3,6 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy:
   - icon: ':warning:'
+    path: Graph/LCA.hpp
+    title: Graph/LCA.hpp
+  - icon: ':warning:'
     path: Graph/bellman-ford.hpp
     title: Graph/bellman-ford.hpp
   - icon: ':warning:'
@@ -55,9 +58,10 @@ data:
   path: Graph/graph-template.hpp
   requiredBy:
   - Graph/warshall_floyd.hpp
+  - Graph/LCA.hpp
   - Graph/kruskal.hpp
   - Graph/bellman-ford.hpp
-  timestamp: '2024-09-24 18:27:42+09:00'
+  timestamp: '2024-09-24 18:31:25+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/graph-template.hpp

@@ -7,6 +7,9 @@ data:
       path: Graph/DSU.hpp
       title: DSU
     - icon: ':warning:'
+      path: Graph/LCA.hpp
+      title: Graph/LCA.hpp
+    - icon: ':warning:'
       path: Graph/bellman-ford.hpp
       title: Graph/bellman-ford.hpp
     - icon: ':warning:'
