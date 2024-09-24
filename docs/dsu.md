@@ -4,6 +4,10 @@ documentation_of: ../Graph/dsu.hpp
 ---
 ノードの連結を管理する
 
+計算量:
+
+* 全て`O(1)`（連結は厳密には異なる）
+
 ## 概要
 
 * `dsu uf(n)`で頂点数`n`のdsuを初期化する
