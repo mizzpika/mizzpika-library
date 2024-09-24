@@ -30,15 +30,18 @@ data:
     path: Template/short.hpp
     title: Template/short.hpp
   _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo/data-structure/Unionfind.test.cpp
+    title: test/yosupo/data-structure/Unionfind.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo/graph/shortest-path.test.cpp
     title: test/yosupo/graph/shortest-path.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
     title: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':question:'
   attributes:
     links: []
   bundledCode: '#line 2 "Template/template.hpp"
@@ -114,9 +117,10 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-24 23:14:33+09:00'
-  verificationStatus: LIBRARY_ALL_AC
+  timestamp: '2024-09-24 23:19:11+09:00'
+  verificationStatus: LIBRARY_SOME_WA
   verifiedWith:
+  - test/yosupo/data-structure/Unionfind.test.cpp
   - test/yosupo/graph/shortest-path.test.cpp
   - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
 documentation_of: Template/template.hpp

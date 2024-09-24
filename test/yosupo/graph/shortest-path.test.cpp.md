@@ -7,7 +7,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph/graph-template.hpp
     title: graph-template
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
@@ -87,7 +87,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/graph/shortest-path.test.cpp
   requiredBy: []
-  timestamp: '2024-09-24 23:14:33+09:00'
+  timestamp: '2024-09-24 23:19:11+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/graph/shortest-path.test.cpp

@@ -5,10 +5,13 @@ data:
   - icon: ':warning:'
     path: Graph/kruskal.hpp
     title: Graph/kruskal.hpp
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: test/yosupo/data-structure/Unionfind.test.cpp
+    title: test/yosupo/data-structure/Unionfind.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links: []
   bundledCode: "#line 2 \"Graph/DSU.hpp\"\n\n//DSU\nstruct DSU{\n    vector<long long>\
@@ -43,9 +46,10 @@ data:
   path: Graph/DSU.hpp
   requiredBy:
   - Graph/kruskal.hpp
-  timestamp: '2024-09-24 23:14:33+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  timestamp: '2024-09-24 23:19:11+09:00'
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - test/yosupo/data-structure/Unionfind.test.cpp
 documentation_of: Graph/DSU.hpp
 layout: document
 title: DSU

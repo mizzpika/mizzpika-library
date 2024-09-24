@@ -4,7 +4,7 @@ data:
   - icon: ':heavy_check_mark:'
     path: Graph/graph-template.hpp
     title: graph-template
-  - icon: ':heavy_check_mark:'
+  - icon: ':question:'
     path: Template/template.hpp
     title: Template/template.hpp
   _extendedRequiredBy: []
@@ -96,7 +96,7 @@ data:
   isVerificationFile: false
   path: Graph/bellman-ford.hpp
   requiredBy: []
-  timestamp: '2024-09-24 23:14:33+09:00'
+  timestamp: '2024-09-24 23:19:11+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/bellman-ford.hpp

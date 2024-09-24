@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: Graph
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: Graph/DSU.hpp
       title: DSU
     - icon: ':heavy_check_mark:'
@@ -35,7 +35,7 @@ data:
     - icon: ':warning:'
       path: Template/short.hpp
       title: Template/short.hpp
-    - icon: ':heavy_check_mark:'
+    - icon: ':question:'
       path: Template/template.hpp
       title: Template/template.hpp
   verificationCategories:
@@ -44,6 +44,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: example.test.cpp
       title: example.test.cpp
+  - name: test/yosupo/data-structure
+    pages:
+    - icon: ':x:'
+      path: test/yosupo/data-structure/Unionfind.test.cpp
+      title: test/yosupo/data-structure/Unionfind.test.cpp
   - name: test/yosupo/graph
     pages:
     - icon: ':heavy_check_mark:'
