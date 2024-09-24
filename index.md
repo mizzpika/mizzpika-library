@@ -30,6 +30,11 @@ data:
     - icon: ':warning:'
       path: Graph/warshall_floyd.hpp
       title: Graph/warshall_floyd.hpp
+  - name: Template
+    pages:
+    - icon: ':warning:'
+      path: Template/template.hpp
+      title: Template/template.hpp
   verificationCategories:
   - name: .
     pages:

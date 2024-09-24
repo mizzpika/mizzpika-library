@@ -86,7 +86,7 @@ data:
   isVerificationFile: false
   path: Graph/LCA.hpp
   requiredBy: []
-  timestamp: '2024-09-24 19:24:22+09:00'
+  timestamp: '2024-09-24 20:59:57+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/LCA.hpp
