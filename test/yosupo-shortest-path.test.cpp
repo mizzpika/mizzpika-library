@@ -1,5 +1,5 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/shortest_path"
-#include "Template/template.cpp"
+#include "Template/template.hpp"
 #include "Graph/dijkstra.hpp"
 using namespace std;
 int main(){
