@@ -85,7 +85,7 @@ data:
   isVerificationFile: false
   path: Graph/dijkstra.hpp
   requiredBy: []
-  timestamp: '2024-09-25 08:18:29+09:00'
+  timestamp: '2024-09-25 21:59:48+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/graph/shortest-path.test.cpp

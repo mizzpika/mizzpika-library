@@ -56,32 +56,70 @@ data:
     \ true;\n    }\n\n    //\u96C6\u5408\u306E\u5927\u304D\u3055\u3092\u6C42\u3081\
     \u308B\n    long long size(long long x){\n        return siz[leader(x)];\n   \
     \ }\n};\n#line 6 \"Graph/kruskal.hpp\"\n\n//kruskal\nstruct kruskal{\n    long\
-    \ long n;\n    vector<Edge2> edges;\n    //kruskal\u306E\u69CB\u7BC9\n    kruskal(Graph\
+    \ long n;\n    vector<Edge2> edges;\n    bool mn_finish = false, mx_finish = false;\n\
+    \    long long mn, mx;\n    set<long long> mn_path, mx_path;\n    //kruskal\u306E\
+    \u69CB\u7BC9\n    kruskal(Graph &g){\n        n = g.size();\n        for(long\
+    \ long i = 0; i < n; i++){\n            for(auto e : g[i]){\n                edges.emplace_back(i,\
+    \ e.to, e.cost);\n            }\n        }\n    }\n\n    //\u6700\u5C0F\u5168\u57DF\
+    \u6728\u306E\u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long min_cost(){\n\
+    \        if(mn_finish){\n            return mn;\n        }\n        sort(edges.begin(),\
+    \ edges.end());\n        DSU dsu(n);\n        long long ret = 0;\n        for(auto\
+    \ e : edges){\n            if(dsu.merge(e.from, e.to)){\n                ret +=\
+    \ e.cost;\n                mn_path.insert(e.from);\n                mn_path.insert(e.to);\n\
+    \            }\n        }\n        return mn = ret;\n    }\n\n    //\u6700\u5927\
+    \u5168\u57DF\u6728\u306E\u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long\
+    \ max_cost(){\n        if(mx_finish){\n            return mx;\n        }\n   \
+    \     sort(edges.rbegin(), edges.rend());\n        DSU dsu(n);\n        long long\
+    \ ret = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from, e.to)){\n\
+    \                ret += e.cost;\n                mx_path.insert(e.from);\n   \
+    \             mx_path.insert(e.to);\n            }\n        }\n        return\
+    \ mx = ret;\n    }\n\n    //\u6700\u5C0F\u5168\u57DF\u6728\u306E\u30D1\u30B9\u3092\
+    set\u3067\u6C42\u3081\u308B\n    set<long long> min_path(){\n        if(mn_finish){\n\
+    \            return mn_path;\n        }\n        sort(edges.begin(), edges.end());\n\
+    \        DSU dsu(n);\n        long long ret = 0;\n        for(auto e : edges){\n\
+    \            if(dsu.merge(e.from, e.to)){\n                ret += e.cost;\n  \
+    \              mn_path.insert(e.from);\n                mn_path.insert(e.to);\n\
+    \            }\n        }\n        return mn_path;\n    }\n\n    //\u6700\u5927\
+    \u5168\u57DF\u6728\u306E\u30D1\u30B9\u3092set\u3067\u6C42\u3081\u308B\n    set<long\
+    \ long> max_path(){\n        if(mx_finish){\n            return mx_path;\n   \
+    \     }\n        sort(edges.rbegin(), edges.rend());\n        DSU dsu(n);\n  \
+    \      long long ret = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from,\
+    \ e.to)){\n                ret += e.cost;\n                mx_path.insert(e.from);\n\
+    \                mx_path.insert(e.to);\n            }\n        }\n        return\
+    \ mx_path;\n    }\n};\n"
+  code: "#pragma once\n\n#include \"Graph/graph-template.hpp\"\n\n#include \"Graph/DSU.hpp\"\
+    \n\n//kruskal\nstruct kruskal{\n    long long n;\n    vector<Edge2> edges;\n \
+    \   bool mn_finish = false, mx_finish = false;\n    long long mn, mx;\n    set<long\
+    \ long> mn_path, mx_path;\n    //kruskal\u306E\u69CB\u7BC9\n    kruskal(Graph\
     \ &g){\n        n = g.size();\n        for(long long i = 0; i < n; i++){\n   \
     \         for(auto e : g[i]){\n                edges.emplace_back(i, e.to, e.cost);\n\
     \            }\n        }\n    }\n\n    //\u6700\u5C0F\u5168\u57DF\u6728\u306E\
-    \u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long mincost(){\n       \
-    \ sort(edges.begin(), edges.end());\n        DSU dsu(n);\n        long long ret\
-    \ = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from, e.to))ret\
-    \ += e.cost;\n        }\n        return ret;\n    }\n\n    //\u6700\u5927\u5168\
-    \u57DF\u6728\u306E\u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long maxcost(){\n\
-    \        sort(edges.rbegin(), edges.rend());\n        DSU dsu(n);\n        long\
-    \ long ret = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from,\
-    \ e.to))ret += e.cost;\n        }\n        return ret;\n    }\n};\n"
-  code: "#pragma once\n\n#include \"Graph/graph-template.hpp\"\n\n#include \"Graph/DSU.hpp\"\
-    \n\n//kruskal\nstruct kruskal{\n    long long n;\n    vector<Edge2> edges;\n \
-    \   //kruskal\u306E\u69CB\u7BC9\n    kruskal(Graph &g){\n        n = g.size();\n\
-    \        for(long long i = 0; i < n; i++){\n            for(auto e : g[i]){\n\
-    \                edges.emplace_back(i, e.to, e.cost);\n            }\n       \
-    \ }\n    }\n\n    //\u6700\u5C0F\u5168\u57DF\u6728\u306E\u30B3\u30B9\u30C8\u3092\
-    \u6C42\u3081\u308B\n    long long mincost(){\n        sort(edges.begin(), edges.end());\n\
+    \u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long min_cost(){\n      \
+    \  if(mn_finish){\n            return mn;\n        }\n        sort(edges.begin(),\
+    \ edges.end());\n        DSU dsu(n);\n        long long ret = 0;\n        for(auto\
+    \ e : edges){\n            if(dsu.merge(e.from, e.to)){\n                ret +=\
+    \ e.cost;\n                mn_path.insert(e.from);\n                mn_path.insert(e.to);\n\
+    \            }\n        }\n        return mn = ret;\n    }\n\n    //\u6700\u5927\
+    \u5168\u57DF\u6728\u306E\u30B3\u30B9\u30C8\u3092\u6C42\u3081\u308B\n    long long\
+    \ max_cost(){\n        if(mx_finish){\n            return mx;\n        }\n   \
+    \     sort(edges.rbegin(), edges.rend());\n        DSU dsu(n);\n        long long\
+    \ ret = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from, e.to)){\n\
+    \                ret += e.cost;\n                mx_path.insert(e.from);\n   \
+    \             mx_path.insert(e.to);\n            }\n        }\n        return\
+    \ mx = ret;\n    }\n\n    //\u6700\u5C0F\u5168\u57DF\u6728\u306E\u30D1\u30B9\u3092\
+    set\u3067\u6C42\u3081\u308B\n    set<long long> min_path(){\n        if(mn_finish){\n\
+    \            return mn_path;\n        }\n        sort(edges.begin(), edges.end());\n\
     \        DSU dsu(n);\n        long long ret = 0;\n        for(auto e : edges){\n\
-    \            if(dsu.merge(e.from, e.to))ret += e.cost;\n        }\n        return\
-    \ ret;\n    }\n\n    //\u6700\u5927\u5168\u57DF\u6728\u306E\u30B3\u30B9\u30C8\u3092\
-    \u6C42\u3081\u308B\n    long long maxcost(){\n        sort(edges.rbegin(), edges.rend());\n\
-    \        DSU dsu(n);\n        long long ret = 0;\n        for(auto e : edges){\n\
-    \            if(dsu.merge(e.from, e.to))ret += e.cost;\n        }\n        return\
-    \ ret;\n    }\n};\n"
+    \            if(dsu.merge(e.from, e.to)){\n                ret += e.cost;\n  \
+    \              mn_path.insert(e.from);\n                mn_path.insert(e.to);\n\
+    \            }\n        }\n        return mn_path;\n    }\n\n    //\u6700\u5927\
+    \u5168\u57DF\u6728\u306E\u30D1\u30B9\u3092set\u3067\u6C42\u3081\u308B\n    set<long\
+    \ long> max_path(){\n        if(mx_finish){\n            return mx_path;\n   \
+    \     }\n        sort(edges.rbegin(), edges.rend());\n        DSU dsu(n);\n  \
+    \      long long ret = 0;\n        for(auto e : edges){\n            if(dsu.merge(e.from,\
+    \ e.to)){\n                ret += e.cost;\n                mx_path.insert(e.from);\n\
+    \                mx_path.insert(e.to);\n            }\n        }\n        return\
+    \ mx_path;\n    }\n};\n"
   dependsOn:
   - Graph/graph-template.hpp
   - Template/template.hpp
@@ -89,7 +127,7 @@ data:
   isVerificationFile: false
   path: Graph/kruskal.hpp
   requiredBy: []
-  timestamp: '2024-09-25 08:18:29+09:00'
+  timestamp: '2024-09-25 21:59:48+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/kruskal.hpp
