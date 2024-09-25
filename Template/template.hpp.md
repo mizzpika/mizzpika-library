@@ -120,7 +120,7 @@ data:
   - Graph/graph-template.hpp
   - Graph/bellman-ford.hpp
   - Template/short.hpp
-  timestamp: '2024-09-25 21:59:48+09:00'
+  timestamp: '2024-09-25 22:12:01+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/yosupo/data-structure/Unionfind.test.cpp

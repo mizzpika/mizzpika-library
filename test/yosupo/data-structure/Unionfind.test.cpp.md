@@ -56,7 +56,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/data-structure/Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2024-09-25 21:59:48+09:00'
+  timestamp: '2024-09-25 22:12:01+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/data-structure/Unionfind.test.cpp
