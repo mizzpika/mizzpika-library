@@ -33,11 +33,6 @@ struct Edge3 {
     Edge3(ll to) : to(to) {}
 };
 
-struct Edge4 {
-    ll to, from, cost, th;
-    Edge4(ll from, ll to, ll cost, ll th) : to(to), from(from), cost(cost), th(th) {}
-};
-
 struct Graph{
     Graph() = default;
     vector<vector<Edge>> G;
