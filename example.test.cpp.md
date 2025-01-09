@@ -3,9 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
+  _verificationStatusIcon: ':x:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B
@@ -29,8 +29,8 @@ data:
   isVerificationFile: true
   path: example.test.cpp
   requiredBy: []
-  timestamp: '2025-01-09 16:18:00+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '2025-01-09 16:21:16+09:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: example.test.cpp
 layout: document
