@@ -1,63 +1,36 @@
 ---
 data:
-  _extendedDependsOn:
-  - icon: ':heavy_check_mark:'
-    path: Graph/DSU.hpp
-    title: DSU
-  - icon: ':heavy_check_mark:'
-    path: Template/template.hpp
-    title: Template/template.hpp
+  _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':heavy_check_mark:'
-  attributes:
-    '*NOT_SPECIAL_COMMENTS*': ''
-    PROBLEM: https://judge.yosupo.jp/problem/unionfind
-    links:
-    - https://judge.yosupo.jp/problem/unionfind
-  bundledCode: "#line 1 \"test/yosupo/data-structure/Unionfind.test.cpp\"\n#define\
-    \ PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n#line 2 \"Template/template.hpp\"\
-    \n\n#include <bits/stdc++.h>\n#pragma GCC optimize(\"Ofast,unroll-loops\")\n#pragma\
-    \ GCC target(\"sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,tune=native\"\
-    )\nusing namespace std;\nusing ll = long long;\n#define rep(i,n) for(ll i = 0LL;\
-    \ i < (ll)n; ++i)\n#define rep1(i,n) for(ll i = 1LL; i <= (ll)n; ++i)\n#define\
-    \ rep2(i,m,n) for(ll i = (ll)m; i < (ll)n; ++i)\n#define rrep(i,n) for(ll i =\
-    \ (ll)n - 1; i >= 0LL; --i)\n#define rrep1(i,n) for(ll i = (ll)n; i > 0LL; --i)\n\
-    #define rrep2(i,m,n) for(ll i = (ll)m; i > (ll)n; --i)\n#define _GLIBCXX_DEBUG\n\
-    #define _CRT_SECURE_NO_WARNINGS\n#line 2 \"Graph/DSU.hpp\"\n\n//DSU\nstruct DSU{\n\
-    \    vector<long long> par, rank, siz;\n    DSU(long long n):par(n, -1), rank(n,\
-    \ 0), siz(n, 1){}\n\n    //\u6839\u3092\u6C42\u3081\u308B\n    long long leader(long\
-    \ long x){\n        if(par[x] == -1){\n            return x;\n        }else{\n\
-    \            return par[x] = leader(par[x]);\n        }\n    }\n\n    //\u9023\
-    \u7D50\u5224\u5B9A\n    bool same(long long x, long long y){\n        return leader(x)\
-    \ == leader(y);\n    }\n\n    //\u9023\u7D50\n    bool merge(long long x, long\
-    \ long y){\n        long long rx = leader(x), ry = leader(y);\n        if(rx ==\
-    \ ry){\n            return false;\n        }\n        if(rank[rx] < rank[ry]){\n\
-    \            swap(rx, ry);\n        }\n        par[ry] = rx;\n        if(rank[rx]\
-    \ == rank[ry]){\n            rank[rx]++;\n        }\n        siz[rx] += siz[ry];\n\
-    \        return true;\n    }\n\n    //\u96C6\u5408\u306E\u5927\u304D\u3055\u3092\
-    \u6C42\u3081\u308B\n    long long size(long long x){\n        return siz[leader(x)];\n\
-    \    }\n};\n#line 4 \"test/yosupo/data-structure/Unionfind.test.cpp\"\n\nint main(){\n\
-    \    ll n, q; cin >> n >> q;\n    DSU dsu(n);\n    while(q--){\n        ll t,\
-    \ u, v; cin >> t >> u >> v;\n        if(t == 0){\n            dsu.merge(u, v);\n\
-    \        }else{\n            cout << (dsu.same(u, v) ? 1 : 0) << endl;\n     \
-    \   }\n    }\n}\n"
+  _verificationStatusIcon: ':x:'
+  attributes: {}
+  bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
+    , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
+    \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
+    \         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\
+    \  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus.py\"\
+    , line 187, in bundle\n    bundler.update(path)\n  File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 401, in update\n    self.update(self._resolve(pathlib.Path(included), included_from=path))\n\
+    \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
+    \ File \"/opt/hostedtoolcache/Python/3.11.0/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
+    , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Template/template.hpp:\
+    \ line -1: no such header\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n#include \"\
     Template/template.hpp\"\n#include \"Graph/DSU.hpp\"\n\nint main(){\n    ll n,\
     \ q; cin >> n >> q;\n    DSU dsu(n);\n    while(q--){\n        ll t, u, v; cin\
     \ >> t >> u >> v;\n        if(t == 0){\n            dsu.merge(u, v);\n       \
     \ }else{\n            cout << (dsu.same(u, v) ? 1 : 0) << endl;\n        }\n \
     \   }\n}\n"
-  dependsOn:
-  - Template/template.hpp
-  - Graph/DSU.hpp
+  dependsOn: []
   isVerificationFile: true
   path: test/yosupo/data-structure/Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2025-01-09 16:00:05+09:00'
-  verificationStatus: TEST_ACCEPTED
+  timestamp: '1970-01-01 00:00:00+00:00'
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: test/yosupo/data-structure/Unionfind.test.cpp
 layout: document

@@ -1,43 +1,6 @@
 ---
 data:
-  libraryCategories:
-  - name: Graph
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: Graph/DSU.hpp
-      title: DSU
-    - icon: ':heavy_check_mark:'
-      path: Graph/LCA.hpp
-      title: Graph/LCA.hpp
-    - icon: ':warning:'
-      path: Graph/bellman-ford.hpp
-      title: Graph/bellman-ford.hpp
-    - icon: ':warning:'
-      path: Graph/bfs1.hpp
-      title: Graph/bfs1.hpp
-    - icon: ':warning:'
-      path: Graph/bfs2.hpp
-      title: Graph/bfs2.hpp
-    - icon: ':heavy_check_mark:'
-      path: Graph/dijkstra.hpp
-      title: dijkstra
-    - icon: ':heavy_check_mark:'
-      path: Graph/graph-template.hpp
-      title: graph-template
-    - icon: ':warning:'
-      path: Graph/kruskal.hpp
-      title: Graph/kruskal.hpp
-    - icon: ':warning:'
-      path: Graph/warshall_floyd.hpp
-      title: Graph/warshall_floyd.hpp
-  - name: Template
-    pages:
-    - icon: ':heavy_check_mark:'
-      path: Template/short.hpp
-      title: Template/short.hpp
-    - icon: ':heavy_check_mark:'
-      path: Template/template.hpp
-      title: Template/template.hpp
+  libraryCategories: []
   verificationCategories:
   - name: .
     pages:
@@ -46,22 +9,22 @@ data:
       title: example.test.cpp
   - name: test/yosupo/Sample
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo/Sample/A+B.test.cpp
       title: test/yosupo/Sample/A+B.test.cpp
   - name: test/yosupo/data-structure
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo/data-structure/Unionfind.test.cpp
       title: test/yosupo/data-structure/Unionfind.test.cpp
   - name: test/yosupo/graph
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo/graph/shortest-path.test.cpp
       title: test/yosupo/graph/shortest-path.test.cpp
   - name: test/yosupo/tree
     pages:
-    - icon: ':heavy_check_mark:'
+    - icon: ':x:'
       path: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
       title: test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
 layout: toppage
