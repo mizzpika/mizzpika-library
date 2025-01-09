@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: string
+    pages:
+    - icon: ':warning:'
+      path: string/knuth-morris-pratt.hpp
+      title: string/knuth-morris-pratt.hpp
   verificationCategories:
   - name: .
     pages:
