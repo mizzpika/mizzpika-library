@@ -6,4 +6,4 @@
 <br>
 Nyaan's libraryになくて自分が欲しいライブラリ
 <br>
-ご自由にどうぞ
+今はverifyしてない
