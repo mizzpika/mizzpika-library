@@ -1,8 +1,8 @@
 #pragma once
-#include "../../Nyaan's library/math/bigint-all.hpp"
+#include "../../math/bigint-all.hpp"
 
-string base_conversion(string n, ull m, ull k) {
-    ull decimalValue = 0;
+string base_conversion(string n, unsigned long long m, unsigned long long k) {
+    unsigned long long decimalValue = 0;
     for (char digit : n) {
         decimalValue *= m;
         if ('0' <= digit && digit <= '9') {
@@ -18,7 +18,7 @@ string base_conversion(string n, ull m, ull k) {
     }
     string result;
     while (decimalValue > 0) {
-        ull remainder = decimalValue % k;
+        unsigned long long remainder = decimalValue % k;
         if (remainder < 10) {
             result.push_back('0' + remainder);
         } else {
