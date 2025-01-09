@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: '#line 1 "string/knuth-morris-pratt.hpp"
+  bundledCode: '#line 1 "math/base_conversion.hpp"
 
 
     '
@@ -17,15 +17,15 @@ data:
     '
   dependsOn: []
   isVerificationFile: false
-  path: string/knuth-morris-pratt.hpp
+  path: math/base_conversion.hpp
   requiredBy: []
   timestamp: '2025-01-09 16:44:36+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: string/knuth-morris-pratt.hpp
+documentation_of: math/base_conversion.hpp
 layout: document
 redirect_from:
-- /library/string/knuth-morris-pratt.hpp
-- /library/string/knuth-morris-pratt.hpp.html
-title: string/knuth-morris-pratt.hpp
+- /library/math/base_conversion.hpp
+- /library/math/base_conversion.hpp.html
+title: math/base_conversion.hpp
 ---

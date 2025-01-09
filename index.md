@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: math
+    pages:
+    - icon: ':warning:'
+      path: math/base_conversion.hpp
+      title: math/base_conversion.hpp
   - name: string
     pages:
     - icon: ':warning:'
