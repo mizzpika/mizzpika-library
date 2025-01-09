@@ -4,7 +4,7 @@ data:
   verificationCategories:
   - name: .
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: example.test.cpp
       title: example.test.cpp
   - name: test/yosupo/Sample
