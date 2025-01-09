@@ -113,20 +113,20 @@ data:
   requiredBy:
   - Graph/warshall_floyd.hpp
   - Graph/LCA.hpp
+  - Graph/bellman-ford.hpp
   - Graph/kruskal.hpp
   - Graph/dijkstra.hpp
-  - Graph/bfs2.hpp
-  - Graph/bfs1.hpp
   - Graph/graph-template.hpp
-  - Graph/bellman-ford.hpp
+  - Graph/bfs1.hpp
+  - Graph/bfs2.hpp
   - Template/short.hpp
-  timestamp: '2024-09-25 22:12:01+09:00'
+  timestamp: '2025-01-09 16:00:05+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - test/yosupo/Sample/A+B.test.cpp
+  - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
   - test/yosupo/data-structure/Unionfind.test.cpp
   - test/yosupo/graph/shortest-path.test.cpp
-  - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
-  - test/yosupo/Sample/A+B.test.cpp
 documentation_of: Template/template.hpp
 layout: document
 redirect_from:

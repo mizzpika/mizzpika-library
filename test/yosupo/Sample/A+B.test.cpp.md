@@ -77,7 +77,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/Sample/A+B.test.cpp
   requiredBy: []
-  timestamp: '2024-09-25 22:12:01+09:00'
+  timestamp: '2025-01-09 16:00:05+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/Sample/A+B.test.cpp

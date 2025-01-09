@@ -93,7 +93,7 @@ data:
   isVerificationFile: false
   path: Graph/bellman-ford.hpp
   requiredBy: []
-  timestamp: '2024-09-25 22:12:01+09:00'
+  timestamp: '2025-01-09 16:00:05+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: Graph/bellman-ford.hpp

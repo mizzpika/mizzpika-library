@@ -83,16 +83,16 @@ data:
   requiredBy:
   - Graph/warshall_floyd.hpp
   - Graph/LCA.hpp
+  - Graph/bellman-ford.hpp
   - Graph/kruskal.hpp
   - Graph/dijkstra.hpp
-  - Graph/bfs2.hpp
   - Graph/bfs1.hpp
-  - Graph/bellman-ford.hpp
-  timestamp: '2024-09-25 22:12:01+09:00'
+  - Graph/bfs2.hpp
+  timestamp: '2025-01-09 16:00:05+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - test/yosupo/graph/shortest-path.test.cpp
   - test/yosupo/tree/Lowest-Common-Ancestor.test.cpp
+  - test/yosupo/graph/shortest-path.test.cpp
 documentation_of: Graph/graph-template.hpp
 layout: document
 title: graph-template

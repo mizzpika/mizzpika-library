@@ -84,7 +84,7 @@ data:
   isVerificationFile: true
   path: test/yosupo/graph/shortest-path.test.cpp
   requiredBy: []
-  timestamp: '2024-09-25 22:12:01+09:00'
+  timestamp: '2025-01-09 16:00:05+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/yosupo/graph/shortest-path.test.cpp
