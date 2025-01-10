@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: '#line 1 "string/knuth-morris-pratt.hpp"
+  bundledCode: '#line 1 "dp/longest-common-substring.hpp"
 
 
     '
@@ -17,15 +17,15 @@ data:
     '
   dependsOn: []
   isVerificationFile: false
-  path: string/knuth-morris-pratt.hpp
+  path: dp/longest-common-substring.hpp
   requiredBy: []
   timestamp: '2025-01-10 16:46:59+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: string/knuth-morris-pratt.hpp
+documentation_of: dp/longest-common-substring.hpp
 layout: document
 redirect_from:
-- /library/string/knuth-morris-pratt.hpp
-- /library/string/knuth-morris-pratt.hpp.html
-title: string/knuth-morris-pratt.hpp
+- /library/dp/longest-common-substring.hpp
+- /library/dp/longest-common-substring.hpp.html
+title: dp/longest-common-substring.hpp
 ---

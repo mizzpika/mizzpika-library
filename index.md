@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: dp
+    pages:
+    - icon: ':warning:'
+      path: dp/longest-common-substring.hpp
+      title: dp/longest-common-substring.hpp
   - name: math
     pages:
     - icon: ':warning:'
