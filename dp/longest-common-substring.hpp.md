@@ -19,7 +19,7 @@ data:
   isVerificationFile: false
   path: dp/longest-common-substring.hpp
   requiredBy: []
-  timestamp: '2025-01-11 17:06:08+09:00'
+  timestamp: '2025-01-11 17:07:04+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: dp/longest-common-substring.hpp

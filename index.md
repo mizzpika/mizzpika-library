@@ -11,6 +11,9 @@ data:
     - icon: ':warning:'
       path: math/base_conversion.hpp
       title: math/base_conversion.hpp
+    - icon: ':warning:'
+      path: math/invesion-number.hpp
+      title: math/invesion-number.hpp
   - name: string
     pages:
     - icon: ':warning:'
