@@ -6,4 +6,4 @@
 <br>
 Nyaan's libraryになくて自分が欲しいライブラリ
 <br>
-今はverifyしてない
+事情でverifyを諦めた、普通の使い方だったらバグらないよ
