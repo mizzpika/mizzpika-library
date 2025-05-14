@@ -6,6 +6,6 @@
 <br>
 Nyaan's libraryになくて自分が欲しいライブラリ
 <br>
-<em>
+<strong>
 全てのファイルはNyaanライブラリに依存しています
-</em>
+</strong>
