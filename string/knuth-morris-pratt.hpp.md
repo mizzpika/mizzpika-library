@@ -19,7 +19,7 @@ data:
   isVerificationFile: false
   path: string/knuth-morris-pratt.hpp
   requiredBy: []
-  timestamp: '2025-01-11 17:37:00+09:00'
+  timestamp: '2025-05-14 10:04:46+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: string/knuth-morris-pratt.hpp
